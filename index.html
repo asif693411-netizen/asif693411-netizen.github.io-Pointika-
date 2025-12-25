@@ -1,166 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Pointika | Syed Asif Ali – Digital Media & Communications</title>
-<meta name="description" content="Pointika is a digital media and communications brand founded by Syed Asif Ali, focused on content creation, media visibility, and strategic storytelling." />
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-<style>
-:root{
---bg:#0b0d12;--card:#121622;--muted:#9aa4b2;--text:#e6eaf0;--brand:#7c9cff;--accent:#2bd4c8;
-}
-*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui}
-body{background:var(--bg);color:var(--text)}
-a{color:inherit;text-decoration:none}
-.container{max-width:1120px;margin:auto;padding:28px}
-
-/* HEADER & NAV */
-header{position:sticky;top:0;background:#0b0d12cc;backdrop-filter:blur(10px);border-bottom:1px solid #1f2435;z-index:999}
-.nav{display:flex;justify-content:space-between;align-items:center}
-.logo-img{height:46px}
-.nav-links{display:flex;align-items:center;gap:16px}
-.nav-links a{padding:8px 0;transition:0.3s}
-.nav-links a:hover{color:var(--brand)}
-.btn{background:linear-gradient(135deg,var(--brand),var(--accent));padding:12px 18px;border-radius:14px;color:#000;font-weight:700}
-
-/* MOBILE MENU */
-.menu-toggle{display:none;font-size:28px;background:none;border:none;color:var(--text);cursor:pointer}
-@media(max-width:900px){
-  .menu-toggle{display:block}
-  .nav-links{
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    flex-direction:column;
-    background:var(--bg);
-    display:none;
-    border-top:1px solid #1f2435;
-  }
-  .nav-links.show{display:flex}
-  .nav-links a{margin:12px 0;text-align:center}
-}
-
-/* SECTIONS */
-section{padding:56px 0}
-h1{font-size:46px}
-h2{font-size:34px}
-.card{background:#121622;border:1px solid #1f2435;border-radius:22px;padding:22px}
-.grid{display:grid;gap:22px}
-.grid-2{grid-template-columns:repeat(2,1fr)}
-.grid-3{grid-template-columns:repeat(3,1fr)}
-.muted{color:var(--muted)}
-
-/* SOCIAL ICONS */
-.social-links{margin-top:16px;display:flex;flex-wrap:wrap;gap:12px}
-.social-links a{font-size:22px;color:var(--text);transition:0.3s}
-.social-links a:hover{color:var(--brand)}
-
-footer{border-top:1px solid #1f2435;padding:28px 0;color:#aeb6c6;text-align:center}
-@media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
-</style>
-</head>
-
-<body>
-
-<header>
-<div class="container nav">
-  <img src="logo.png" alt="Pointika Logo" class="logo-img">
-  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#founder">Founder</a>
-    <a href="#qa">Q&A</a>
-    <a href="#contact" class="btn">Contact</a>
-  </div>
-</div>
-</header>
-
-<main class="container">
-<section>
-<h1>Build Visibility. Shape Presence. Grow with Confidence.</h1>
-<p class="muted">Pointika delivers modern media, content and communications solutions with a founder-led approach.</p>
-</section>
-
-<section id="about">
-<h2>About Pointika</h2>
-<p class="muted">Pointika is a digital media and communications brand focused on building credible online presence.</p>
-</section>
-
-<section id="services">
-<h2>Services</h2>
-<div class="grid grid-3">
-<div class="card"><b>Media & PR</b><p class="muted">Editorial features & placements</p></div>
-<div class="card"><b>Content</b><p class="muted">Articles & profiles</p></div>
-<div class="card"><b>Digital Presence</b><p class="muted">Visibility & growth</p></div>
-</div>
-</section>
-
-<section id="founder">
-<h2>Founder</h2>
-<div class="card">
-<p class="muted"><b>Syed Asif Ali</b> – Digital media entrepreneur & founder of Pointika.</p>
-</div>
-</section>
-
-<section id="qa">
-<h2>Questions Answered</h2>
-<div class="grid grid-2">
-<div class="card"><b>Who is Syed Asif Ali?</b><p class="muted">Entrepreneur & founder of Pointika.</p></div>
-<div class="card"><b>What is Pointika?</b><p class="muted">A digital media & communications brand.</p></div>
-</div>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<div class="card">
-<p class="muted">Website: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
-<p class="muted">Email: info@syedasifali.link</p>
-<p class="muted">Phone: +971 52 715 7894</p>
-
-<hr style="border:0;border-top:1px solid #1f2435;margin:16px 0">
-
-<div class="social-links">
-<a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
-<a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
-<a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
-<a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
-<a href="https://www.facebook.com/share/1DokMS7GB9/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook"></i></a>
-</div>
-</div>
-</section>
-
-</main>
-
-<footer>
-<div class="container">
-© <span id="y"></span> Pointika · All Rights Reserved
-</div>
-</footer>
-
 <script>
 document.getElementById("y").textContent=new Date().getFullYear();
 
 /* MOBILE MENU TOGGLE */
 const toggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
-toggle.addEventListener("click", () => {
+
+toggle.addEventListener("click", (e) => {
+  e.stopPropagation(); // toggle click par event bubble na ho
   navLinks.classList.toggle("show");
 });
-</script>
 
-</body>
-</html>
+// Agar user screen ke kisi bhi jagah par click kare, menu hide ho jaye
+document.addEventListener("click", (e) => {
+  if(!navLinks.contains(e.target) && !toggle.contains(e.target)){
+    navLinks.classList.remove("show");
+  }
+});
+</script>
