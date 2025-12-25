@@ -1,214 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pointika | Syed Asif Ali – Digital Media & Communications</title>
-<meta name="description" content="Pointika is a digital media and communications brand founded by Syed Asif Ali, focused on content creation, media visibility, and strategic storytelling." />
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="description" content="Pointika is a digital media and communications brand founded by Syed Asif Ali, focused on content creation, media visibility, and strategic storytelling."><!-- Fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><!-- Open Graph --><meta property="og:type" content="website">
+<meta property="og:title" content="Pointika | Syed Asif Ali – Digital Media & Communications">
+<meta property="og:description" content="Digital media & communications brand founded by Syed Asif Ali.">
+<meta property="og:url" content="https://syedasifali.link/asif693411-netizen.github.io-Pointika-/">
+<meta property="og:image" content="https://syedasifali.link/logo.png"><style>
 :root{
---bg:#0b0d12;--card:#121622;--muted:#9aa4b2;--text:#e6eaf0;--brand:#7c9cff;--accent:#2bd4c8;
+  --bg:#0b0d12;--card:#121622;--muted:#9aa4b2;--text:#e6eaf0;
+  --brand:#7c9cff;--accent:#2bd4c8;
 }
-*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui}
-body{background:var(--bg);color:var(--text)}
-a{color:inherit;text-decoration:none}
-.container{max-width:1120px;margin:auto;padding:28px}
-
-/* HEADER & NAV */
-header{position:sticky;top:0;background:#0b0d12cc;backdrop-filter:blur(10px);border-bottom:1px solid #1f2435;z-index:999;transition:0.3s}
-header.scrolled{box-shadow:0 4px 20px rgba(0,0,0,0.5)}
-.nav{display:flex;justify-content:space-between;align-items:center;position:relative}
-.logo-img{height:46px}
-.nav-links{display:flex;align-items:center;gap:16px}
-.nav-links a{padding:8px 0;transition:0.3s}
-.nav-links a:hover{color:var(--brand)}
-.nav-links a.active{color:var(--accent)}
-.btn{background:linear-gradient(135deg,var(--brand),var(--accent));padding:12px 18px;border-radius:14px;color:#000;font-weight:700}
-
-/* MOBILE MENU */
-.menu-toggle{display:none;font-size:28px;background:none;border:none;color:var(--text);cursor:pointer}
-@media(max-width:900px){
-  .menu-toggle{display:block}
-  .nav-links{
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    flex-direction:column;
-    background:var(--bg);
-    display:none;
-    border-top:1px solid #1f2435;
-    z-index:998;
-  }
-  .nav-links.show{display:flex}
-  .nav-links a{margin:12px 0;text-align:center}
-}
-
-/* SECTIONS */
-section{padding:56px 0}
-h1{font-size:46px}
-h2{font-size:34px}
-.card{background:#121622;border:1px solid #1f2435;border-radius:22px;padding:22px}
-.grid{display:grid;gap:22px}
-.grid-2{grid-template-columns:repeat(2,1fr)}
-.grid-3{grid-template-columns:repeat(3,1fr)}
-.muted{color:var(--muted)}
-
-/* SOCIAL ICONS */
-.social-links{margin-top:16px;display:flex;flex-wrap:wrap;gap:12px}
-.social-links a{font-size:22px;color:var(--text);transition:0.3s}
-.social-links a:hover{color:var(--brand)}
-
-footer{border-top:1px solid #1f2435;padding:28px 0;color:#aeb6c6;text-align:center}
-@media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
-</style>
-</head>
-
-<body>
-
-<header>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,sans-serif;}
+body{background:var(--bg);color:var(--text);scroll-behavior:smooth;}
+a{color:inherit;text-decoration:none;}
+.container{max-width:1120px;margin:auto;padding:28px;}
+header{position:sticky;top:0;backdrop-filter:blur(10px);background:transparent;border-bottom:1px solid #1f2435;z-index:999;transition:0.4s;}
+header.scrolled{background: linear-gradient(135deg,var(--brand),var(--accent));box-shadow:0 4px 20px rgba(0,0,0,0.5);}
+.nav{display:flex;justify-content:space-between;align-items:center;}
+.logo-img{height:50px;transition:0.3s;}
+.nav nav{display:flex;gap:18px;}
+.nav a{padding:8px 0;transition:0.3s;}
+.nav a:hover,.nav a.active{color:#0b0d12;font-weight:600;}
+.menu-toggle{display:none;font-size:28px;background:none;border:none;color:var(--text);cursor:pointer;}
+.hero{display:flex;align-items:center;justify-content:center;text-align:center;height:90vh;flex-direction:column;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(124,156,255,0.3),rgba(43,212,200,0.3));pointer-events:none;}
+.hero h1{font-size:48px;margin-bottom:16px;transition:0.3s;}
+.hero p{font-size:20px;color:#c7cfdb;margin-bottom:24px;transition:0.3s;}
+.btn{background:linear-gradient(135deg,var(--brand),var(--accent));padding:12px 24px;border-radius:14px;color:#000;font-weight:700;transition:0.3s;}
+.btn:hover{transform:translateY(-3px);box-shadow:0 6px 15px rgba(0,0,0,0.3);}
+section{padding:56px 0;}
+h2{font-size:36px;margin-bottom:16px;}
+.card{background:var(--card);border-radius:22px;padding:22px;transition:0.3s;}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,0.5);}
+.grid{display:grid;gap:22px;}
+.grid-2{grid-template-columns:repeat(2,1fr);}
+.grid-3{grid-template-columns:repeat(3,1fr);}
+.muted{color:var(--muted);}
+footer{border-top:1px solid #1f2435;padding:28px 0;color:#aeb6c6;text-align:center;}
+.social-links a{margin-right:12px;transition:0.3s;color:var(--muted);}
+.social-links a:hover{color:var(--accent);transform:translateY(-2px);}
+form input, form textarea{width:100%;padding:12px;margin-bottom:12px;border-radius:10px;border:none;background:#1a1f2f;color:#e6eaf0;transition:0.3s;}
+form input:focus, form textarea:focus{outline:none;box-shadow:0 0 10px rgba(43,212,200,0.5);}
+form button{background:linear-gradient(135deg,var(--brand),var(--accent));padding:12px 24px;border:none;border-radius:14px;color:#000;font-weight:700;cursor:pointer;transition:0.3s;}
+form button:hover{transform:translateY(-3px);box-shadow:0 6px 15px rgba(0,0,0,0.3);}
+@media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}.menu-toggle{display:block}.nav nav{display:none;flex-direction:column;position:absolute;top:100%;left:0;width:100%;background:var(--bg);padding:10px;}}
+</style></head>
+<body><header>
 <div class="container nav">
-  <img src="logo.png" alt="Pointika Logo" class="logo-img">
-  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#founder">Founder</a>
-    <a href="#qa">Q&A</a>
-    <a href="#contact" class="btn">Contact</a>
-  </div>
+<img src="logo.png" alt="Pointika Logo" class="logo-img">
+<button class="menu-toggle">☰</button>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#founder">Founder</a>
+<a href="#qa">Q&A</a>
+<a href="#contact" class="btn">Contact</a>
+</nav>
 </div>
-</header>
-
-<main class="container">
-<section>
+</header><main class="container">
+<section class="hero">
 <h1>Build Visibility. Shape Presence. Grow with Confidence.</h1>
-<p class="muted">Pointika delivers modern media, content and communications solutions with a founder-led approach.</p>
-</section>
-
-<section id="about">
+<p>Pointika delivers modern media, content and communications solutions with a founder-led approach.</p>
+<a href="#contact" class="btn">Start a Conversation</a>
+</section><section id="about">
 <h2>About Pointika</h2>
-<p class="muted">Pointika is a digital media and communications brand focused on building credible online presence.</p>
-</section>
-
-<section id="services">
+<p class="muted">Pointika is a digital media and communications brand focused on building credible online presence through content, media relations, and strategic storytelling.</p>
+</section><section id="services">
 <h2>Services</h2>
 <div class="grid grid-3">
-<div class="card"><b>Media & PR</b><p class="muted">Editorial features & placements</p></div>
-<div class="card"><b>Content</b><p class="muted">Articles & profiles</p></div>
-<div class="card"><b>Digital Presence</b><p class="muted">Visibility & growth</p></div>
+<div class="card"><b>Media & PR</b><p class="muted">Editorial features, placements, and brand narratives.</p></div>
+<div class="card"><b>Content</b><p class="muted">Articles, profiles, and thought leadership.</p></div>
+<div class="card"><b>Digital Presence</b><p class="muted">Brand visibility and growth strategies.</p></div>
 </div>
-</section>
-
-<section id="founder">
+</section><section id="founder">
 <h2>Founder</h2>
 <div class="card">
 <p class="muted"><b>Syed Asif Ali</b> – Digital media entrepreneur & founder of Pointika.</p>
 </div>
-</section>
-
-<section id="qa">
+</section><section id="qa">
 <h2>Questions Answered</h2>
 <div class="grid grid-2">
 <div class="card"><b>Who is Syed Asif Ali?</b><p class="muted">Entrepreneur & founder of Pointika.</p></div>
-<div class="card"><b>What is Pointika?</b><p class="muted">A digital media & communications brand.</p></div>
+<div class="card"><b>What is Pointika?</b><p class="muted">A digital media & communications brand focused on content creation and media visibility.</p></div>
 </div>
-</section>
-
-<section id="contact">
+</section><section id="contact">
 <h2>Contact</h2>
 <div class="card">
-<p class="muted">Website: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
-<p class="muted">Email: info@syedasifali.link</p>
-<p class="muted">Phone: +971 52 715 7894</p>
-
+<form action="mailto:info@syedasifali.link" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+<button type="submit">Send Message</button>
+</form>
 <hr style="border:0;border-top:1px solid #1f2435;margin:16px 0">
-
 <div class="social-links">
-<a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
-<a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
-<a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
-<a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
-<a href="https://www.facebook.com/share/1DokMS7GB9/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/boxer_01101" target="_blank">Instagram</a>
+<a href="https://www.tiktok.com/@pointika.media" target="_blank">TikTok</a>
+<a href="https://www.youtube.com/@AsifAli-Digital" target="_blank">YouTube</a>
+<a href="https://www.linkedin.com/in/pointmedia" target="_blank">LinkedIn</a>
+<a href="https://x.com/Boxer_01101" target="_blank">X</a>
+<a href="https://medium.com/@asif693411" target="_blank">Medium</a>
+<a href="https://www.facebook.com/share/1DokMS7GB9/?mibextid=qi2Omg" target="_blank">Facebook</a>
 </div>
 </div>
 </section>
-
-</main>
-
-<footer>
-<div class="container">
-© <span id="y"></span> Pointika · All Rights Reserved
-</div>
-</footer>
-
-<script>
+</main><footer>
+<div class="container">© <span id="y"></span> Pointika · All Rights Reserved</div>
+</footer><script>
 document.getElementById("y").textContent = new Date().getFullYear();
 
-/* MOBILE MENU TOGGLE + AUTO HIDE ON OUTSIDE CLICK */
-const toggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-toggle.addEventListener("click", (e) => {
-  e.stopPropagation();
-  navLinks.classList.toggle("show");
-});
-
-document.addEventListener("click", (e) => {
-  if(!navLinks.contains(e.target) && !toggle.contains(e.target)){
-    navLinks.classList.remove("show");
-  }
-});
-
-/* HEADER SCROLL SHADOW */
+/* Sticky scroll header */
 const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
-  if(window.scrollY > 20){
-    header.classList.add("scrolled");
-  }else{
-    header.classList.remove("scrolled");
-  }
+  if(window.scrollY > 50) header.classList.add("scrolled");
+  else header.classList.remove("scrolled");
 });
 
-/* SMOOTH SCROLL & ACTIVE LINK HIGHLIGHT */
+/* Active menu + mobile toggle */
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav nav");
+toggle.addEventListener("click", e => { e.stopPropagation(); nav.classList.toggle("show"); });
+document.addEventListener("click", e => { if(!nav.contains(e.target) && !toggle.contains(e.target)) nav.classList.remove("show"); });
+
 const sections = document.querySelectorAll("section[id]");
-const navAnchors = document.querySelectorAll(".nav-links a[href^='#']");
-
-navAnchors.forEach(anchor => {
-  anchor.addEventListener('click', function(e){
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if(target){
-      target.scrollIntoView({behavior: 'smooth', block: 'start'});
-    }
-    navLinks.classList.remove("show");
-  });
-});
-
+const navLinks = document.querySelectorAll(".nav a[href^='#']");
 window.addEventListener("scroll", () => {
   let current = "";
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if(window.scrollY >= sectionTop){ current = section.getAttribute("id"); }
-  });
-  navAnchors.forEach(link => {
-    link.classList.remove("active");
-    if(link.getAttribute("href") === "#" + current) link.classList.add("active");
-  });
+  sections.forEach(section => { if(window.scrollY >= section.offsetTop - 140) current = section.getAttribute("id"); });
+  navLinks.forEach(link => { link.classList.remove("active"); if(link.getAttribute("href")==="#"+current) link.classList.add("active"); });
 });
-</script>
-
-</body>
+</script></body>
 </html>
