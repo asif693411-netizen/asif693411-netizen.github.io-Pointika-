@@ -1,40 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
   <url>
     <loc>https://pointika.link/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://pointika.link/about</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://pointika.link/services</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://pointika.link/founder</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://pointika.link/qa</loc>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  
-  <url>
-    <loc>https://pointika.link/contact</loc>
-    <priority>0.9</priority>
-    <changefreq>monthly</changefreq>
   </url>
 
 </urlset>
