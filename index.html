@@ -17,46 +17,51 @@
 
 <style>
 :root{
---bg:#0b0d12;
---card:#121622;
---border:#1f2435;
---text:#e6eaf0;
---muted:#9aa4b2;
---brand:#7c9cff;
---accent:#2bd4c8;
+  --bg:#0b0d12;
+  --card:#121622;
+  --border:#1f2435;
+  --text:#e6eaf0;
+  --muted:#9aa4b2;
+  --brand:#7c9cff;
+  --accent:#2bd4c8;
+  --transition:.4s ease-in-out;
 }
-
-*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial,sans-serif}
-body{background:var(--bg);color:var(--text);line-height:1.7}
-a{text-decoration:none;color:inherit}
-.container{max-width:1100px;margin:auto;padding:30px}
-header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial,sans-serif;}
+body{background:var(--bg);color:var(--text);line-height:1.7;scroll-behavior:smooth;}
+a{text-decoration:none;color:inherit;}
+.container{max-width:1100px;margin:auto;padding:30px;}
+header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);transition:all var(--transition);}
 .header-inner{display:flex;align-items:center;justify-content:space-between;}
 .brand{display:flex;align-items:center;gap:15px;}
 .brand img{height:55px;}
 .brand h1{font-size:22px;font-weight:700;color:var(--brand);}
-nav a{margin-left:20px;color:var(--muted);font-weight:500;transition:.3s;}
+nav a{margin-left:20px;color:var(--muted);font-weight:500;transition:color var(--transition);}
 nav a:hover{color:var(--brand);}
-.hero{padding:120px 20px;text-align:center;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url('hero-placeholder.jpg') center/cover no-repeat;color:#fff;}
-.hero h2{font-size:48px;font-weight:800;margin-bottom:15px;}
+.hero{padding:120px 20px;text-align:center;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url('hero-placeholder.jpg') center/cover no-repeat;color:#fff;animation:fadeIn 1.2s ease;}
+.hero h2{font-size:48px;font-weight:800;margin-bottom:15px;background:linear-gradient(90deg,var(--brand),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .hero p{font-size:20px;color:#c7cfdb;max-width:720px;margin:auto;}
-.badge{display:inline-block;margin-top:25px;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b0d12;font-weight:700;}
-section{padding:80px 0;border-top:1px solid var(--border);}
-h3{font-size:34px;margin-bottom:20px;}
-.card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:30px;transition:transform .3s;}
-.card:hover{transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,.5);}
+.badge{display:inline-block;margin-top:25px;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b0d12;font-weight:700;transition:transform var(--transition);}
+.badge:hover{transform:scale(1.05);}
+section{padding:80px 0;border-top:1px solid var(--border);opacity:0;transform:translateY(30px);transition:all .8s ease;}
+section.visible{opacity:1;transform:translateY(0);}
+h3{font-size:34px;margin-bottom:20px;background:linear-gradient(90deg,var(--brand),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:30px;transition:transform var(--transition),box-shadow var(--transition);}
+.card:hover{transform:translateY(-8px);box-shadow:0 15px 30px rgba(0,0,0,.5);}
 .grid{display:grid;gap:24px;}
 .grid-3{grid-template-columns:repeat(3,1fr);}
-.service{padding:25px;border-radius:20px;background:#14182a;border:1px solid var(--border);text-align:center;}
+.service{padding:25px;border-radius:20px;background:#14182a;border:1px solid var(--border);text-align:center;transition:transform var(--transition);}
 .service i{font-size:28px;color:var(--brand);margin-bottom:10px;display:block;}
+.service:hover{transform:translateY(-5px);}
 .social{display:flex;flex-wrap:wrap;gap:22px;margin-top:25px;justify-content:center;}
-.social a{font-size:24px;color:var(--muted);transition:.3s;}
+.social a{font-size:24px;color:var(--muted);transition:color var(--transition);}
 .social a:hover{color:var(--brand);}
-.accordion{background:var(--card);border:1px solid var(--border);border-radius:20px;margin-bottom:15px;cursor:pointer;padding:20px;transition:.3s;}
+.accordion{background:var(--card);border:1px solid var(--border);border-radius:20px;margin-bottom:15px;cursor:pointer;padding:20px;transition:background var(--transition);}
 .accordion:hover{background:#1e2230;}
-.panel{padding:0 20px;display:none;background:var(--card);color:var(--muted);}
+.panel{padding:0 20px;max-height:0;overflow:hidden;transition:max-height .5s ease;color:var(--muted);}
 footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted);}
+
 @media(max-width:900px){.hero h2{font-size:36px}.grid-3{grid-template-columns:1fr}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px);} to{opacity:1;transform:translateY(0);}}
 </style>
 </head>
 
@@ -154,16 +159,31 @@ footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:v
 </footer>
 
 <script>
-// Accordion functionality
-var acc = document.getElementsByClassName("accordion");
+// Accordion
+var acc=document.getElementsByClassName("accordion");
 for(let i=0;i<acc.length;i++){
   acc[i].addEventListener("click",function(){
     this.classList.toggle("active");
     var panel=this.nextElementSibling;
-    if(panel.style.display==="block"){panel.style.display="none";}
-    else{panel.style.display="block";}
+    if(panel.style.maxHeight){
+      panel.style.maxHeight=null;
+    }else{
+      panel.style.maxHeight=panel.scrollHeight+"px";
+    }
   });
 }
+
+// Scroll reveal
+const sections = document.querySelectorAll('section');
+const reveal = () => {
+  const triggerBottom = window.innerHeight/5*4;
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top<triggerBottom){sec.classList.add('visible');}
+  });
+};
+window.addEventListener('scroll',reveal);
+window.addEventListener('load',reveal);
 </script>
 
 </body>
