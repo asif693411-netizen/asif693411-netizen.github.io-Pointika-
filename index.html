@@ -4,30 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pointika — Digital Media & Communications</title>
-<meta name="description" content="Pointika is a founder-led digital media & communications brand delivering content, branding, and online visibility solutions.">
+<meta name="description" content="Pointika is an independent digital media & communications brand founded by Syed Asif Ali.">
 
 <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Business Schema + Crunchbase + Wikidata -->
+<!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Pointika",
-  "image": "https://asif693411-netizen.github.io/logo.png",
-  "@id": "https://asif693411-netizen.github.io/",
   "url": "https://asif693411-netizen.github.io/",
-  "telephone": "",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "",
-    "addressLocality": "UAE",
-    "addressRegion": "",
-    "postalCode": "",
-    "addressCountry": "AE"
-  },
+  "logo": "https://asif693411-netizen.github.io/logo.png",
+  "image": "https://asif693411-netizen.github.io/hero-placeholder.jpg",
   "founder": {
     "@type": "Person",
     "name": "Syed Asif Ali",
@@ -36,15 +27,24 @@
   "sameAs": [
     "https://www.instagram.com/boxer_01101",
     "https://www.tiktok.com/@syed_asif_ali34",
-    "https://www.youtube.com/@AsifAli-Digital",
+    "https://www.youtube.com/@AsifAli",
     "https://www.linkedin.com/in/pointmedia",
     "https://x.com/Boxer_01101",
     "https://medium.com/@asif693411",
-    "https://www.facebook.com/share/1DokMS7GB9/",
-    "https://www.crunchbase.com/organization/pointika",
-    "https://www.wikidata.org/wiki/Q12345678"
+    "https://www.facebook.com/share/1DokMS7GB9/"
   ],
-  "description": "Pointika is a founder-led digital media & communications brand delivering content, branding, and online visibility solutions."
+  "description": "Pointika is a founder-led digital media & communications brand delivering content, visibility, and online credibility solutions.",
+  "email": "info@syedasifali.link",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "UAE",
+    "addressCountry": "AE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "info@syedasifali.link"
+  }
 }
 </script>
 
@@ -58,8 +58,6 @@
 body{background:var(--bg);color:var(--text);line-height:1.7}
 a{text-decoration:none;color:inherit}
 .container{max-width:1100px;margin:auto;padding:30px}
-
-/* HEADER */
 header{position:sticky;top:0;z-index:99;background:#0b0d12;border-bottom:1px solid var(--border)}
 .header-inner{display:flex;justify-content:space-between;align-items:center}
 .brand{display:flex;align-items:center;gap:12px}
@@ -69,15 +67,14 @@ nav{display:flex;gap:20px}
 nav a{color:var(--muted);font-weight:500}
 nav a:hover{color:var(--brand)}
 .menu-btn{display:none;font-size:24px;cursor:pointer}
-
-/* HERO */
-.hero{padding:120px 20px;text-align:center;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('hero-placeholder.jpg') center/cover}
-.hero h2{font-size:50px;font-weight:800;line-height:1.2}
-.hero p{max-width:720px;margin:15px auto;color:#c7cfdb;font-size:20px}
-.badge{margin-top:25px;display:inline-block;padding:14px 28px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b0d12;font-weight:700;font-size:16px;cursor:pointer;transition:.3s}
-.badge:hover{transform:scale(1.05)}
-
-/* SECTIONS */
+.hero{padding:110px 20px;text-align:center;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('hero-placeholder.jpg') center/cover;color:#fff}
+.hero h2{font-size:46px;font-weight:800}
+.hero p{max-width:720px;margin:15px auto;color:#c7cfdb}
+.badge{margin-top:25px;display:inline-block;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#000;font-weight:700}
+.stats{display:flex;gap:30px;justify-content:center;margin-top:40px;text-align:center}
+.stat-card{background:var(--card);padding:20px 30px;border-radius:20px;border:1px solid var(--border)}
+.stat-card h4{font-size:20px;margin-bottom:10px;color:var(--brand)}
+.stat-card p{font-size:18px;color:var(--muted)}
 section{padding:80px 0;border-top:1px solid var(--border)}
 h3{font-size:34px;margin-bottom:20px}
 .card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:30px}
@@ -85,23 +82,18 @@ h3{font-size:34px;margin-bottom:20px}
 .grid-3{grid-template-columns:repeat(3,1fr)}
 .service{text-align:center;padding:25px;border-radius:20px;background:#14182a;border:1px solid var(--border)}
 .service i{font-size:28px;color:var(--brand);margin-bottom:10px}
-
-/* ACCORDION */
 .accordion{cursor:pointer;padding:20px;border-radius:20px;background:var(--card);border:1px solid var(--border);margin-bottom:10px}
 .accordion.active{background:#1e2230}
 .panel{display:none;padding:15px 20px;color:var(--muted)}
-
-/* FOOTER */
+.social{display:flex;flex-wrap:wrap;gap:22px;margin-top:25px;justify-content:center}
+.social a{font-size:24px;color:var(--muted);transition:.3s}
+.social a:hover{color:var(--brand)}
 footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
-
-/* MOBILE */
-@media(max-width:900px){
-nav{display:none;flex-direction:column;background:#0b0d12;position:absolute;top:70px;right:20px;border:1px solid var(--border);border-radius:14px;padding:15px}
+@media(max-width:900px){nav{display:none;flex-direction:column;background:#0b0d12;position:absolute;top:70px;right:20px;border:1px solid var(--border);border-radius:14px;padding:15px}
 nav.show{display:flex}
 .menu-btn{display:block}
 .grid-3{grid-template-columns:1fr}
-.hero h2{font-size:36px}
-}
+.hero h2{font-size:34px}}
 </style>
 </head>
 
@@ -126,16 +118,20 @@ nav.show{display:flex}
 </header>
 
 <section class="hero">
-<h2>Build Visibility.<br>Shape Your Digital Presence.</h2>
-<p>Founder-led digital media & communications brand delivering content, branding, and online visibility solutions.</p>
-<div class="badge" onclick="window.location.href='https://syedasifali.link'">Visit Website</div>
+<h2>Build Visibility.<br>Shape Digital Presence.</h2>
+<p>Founder-led digital media & communications initiative.</p>
+<div class="badge">Founded by Syed Asif Ali</div>
+<div class="stats">
+  <div class="stat-card"><h4>Active Reach</h4><p>Across multiple platforms worldwide</p></div>
+  <div class="stat-card"><h4>Engaged Audience</h4><p>Millions of monthly impressions</p></div>
+  <div class="stat-card"><h4>Influencer Marketing</h4><p>Trusted by brands and creators</p></div>
+</div>
 </section>
 
 <section id="about" class="container">
 <h3>About Pointika</h3>
 <div class="card">
-<p><strong>Pointika</strong> is an independent digital media & communications brand focused on storytelling, visibility, and credibility.</p>
-<p>Personal Website: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
+<p><strong>Pointika</strong> is an independent digital media & communications brand focused on storytelling, visibility and credibility. Founded and led by <strong>Syed Asif Ali</strong>.</p>
 </div>
 </section>
 
@@ -165,16 +161,12 @@ nav.show{display:flex}
 <section id="qa" class="container">
 <h3>Q & A</h3>
 <div class="accordion">Who is Syed Asif Ali?</div>
-<div class="panel">Founder of Pointika, digital creator, and entrepreneur.</div>
+<div class="panel">Founder of Pointika, digital media & communications brand.</div>
 <div class="accordion">What is Pointika?</div>
-<div class="panel">Independent digital media & communications brand delivering content and online visibility solutions.</div>
-<div class="accordion">Where can I follow Syed Asif Ali?</div>
+<div class="panel">Independent platform delivering content, visibility, and credibility solutions.</div>
+<div class="accordion">Where can you follow Pointika?</div>
 <div class="panel">
-Instagram: <a href="https://www.instagram.com/boxer_01101" target="_blank">@boxer_01101</a><br>
-TikTok: <a href="https://www.tiktok.com/@syed_asif_ali34" target="_blank">@syed_asif_ali34</a><br>
-YouTube: <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank">@AsifAli-Digital</a><br>
-LinkedIn: <a href="https://www.linkedin.com/in/pointmedia" target="_blank">Point Media</a><br>
-Personal Website: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a>
+Instagram, TikTok, YouTube, LinkedIn, X, Medium, Facebook.
 </div>
 </section>
 
@@ -182,7 +174,16 @@ Personal Website: <a href="https://syedasifali.link" target="_blank">syedasifali
 <h3>Connect</h3>
 <div class="card">
 <p>Email: <strong>info@syedasifali.link</strong></p>
-<p>Visit: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
+<p>Website: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
+<div class="social">
+<a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@syed_asif_ali34" target="_blank"><i class="fab fa-tiktok"></i></a>
+<a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
+<a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
+<a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
+<a href="https://www.facebook.com/share/1DokMS7GB9/" target="_blank"><i class="fab fa-facebook"></i></a>
+</div>
 </div>
 </section>
 
@@ -190,9 +191,7 @@ Personal Website: <a href="https://syedasifali.link" target="_blank">syedasifali
 
 <script>
 function toggleMenu(){document.getElementById("nav").classList.toggle("show");}
-document.querySelectorAll(".accordion").forEach(a=>{
-  a.onclick=()=>{a.classList.toggle("active");a.nextElementSibling.style.display=a.nextElementSibling.style.display==="block"?"none":"block";}
-});
+document.querySelectorAll(".accordion").forEach(a=>{a.onclick=()=>{a.classList.toggle("active");a.nextElementSibling.style.display=a.nextElementSibling.style.display==="block"?"none":"block";}});
 </script>
 
 </body>
