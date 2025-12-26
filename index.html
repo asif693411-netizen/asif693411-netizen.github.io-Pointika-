@@ -27,9 +27,10 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial,sans-serif}
-body{background:var(--bg);color:var(--text);line-height:1.7;scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);line-height:1.7}
 a{text-decoration:none;color:inherit}
 .container{max-width:1100px;margin:auto;padding:30px}
+
 header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
 .header-inner{display:flex;align-items:center;justify-content:space-between;}
 .brand{display:flex;align-items:center;gap:15px;}
@@ -37,10 +38,12 @@ header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.95);backdrop-f
 .brand h1{font-size:22px;font-weight:700;color:var(--brand);}
 nav a{margin-left:20px;color:var(--muted);font-weight:500;transition:.3s;}
 nav a:hover{color:var(--brand);}
+
 .hero{padding:120px 20px;text-align:center;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url('hero-placeholder.jpg') center/cover no-repeat;color:#fff;}
 .hero h2{font-size:48px;font-weight:800;margin-bottom:15px;}
 .hero p{font-size:20px;color:#c7cfdb;max-width:720px;margin:auto;}
 .badge{display:inline-block;margin-top:25px;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#0b0d12;font-weight:700;}
+
 section{padding:80px 0;border-top:1px solid var(--border);}
 h3{font-size:34px;margin-bottom:20px;}
 .card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:30px;transition:transform .3s;}
@@ -52,16 +55,19 @@ h3{font-size:34px;margin-bottom:20px;}
 .social{display:flex;flex-wrap:wrap;gap:22px;margin-top:25px;justify-content:center;}
 .social a{font-size:24px;color:var(--muted);transition:.3s;}
 .social a:hover{color:var(--brand);}
-.accordion{background:var(--card);border:1px solid var(--border);border-radius:20px;margin-bottom:15px;cursor:pointer;padding:20px;transition:.3s;font-weight:500;}
+
+/* Accordion Q&A */
+.accordion{background:var(--card);border:1px solid var(--border);border-radius:20px;margin-bottom:15px;cursor:pointer;padding:20px;transition:background .3s;font-weight:500;}
 .accordion:hover{background:#1e2230;}
-.panel{padding:0 20px;display:none;background:var(--card);color:var(--muted);}
+.panel{max-height:0;overflow:hidden;transition:max-height 0.35s ease;padding:0 20px;color:var(--muted);}
+.panel p{margin:15px 0;}
+
 footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted);}
 @media(max-width:900px){.hero h2{font-size:36px}.grid-3{grid-template-columns:1fr}}
 </style>
 </head>
 
 <body>
-
 <header>
 <div class="container header-inner">
 <div class="brand">
@@ -120,12 +126,16 @@ footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:v
 <h3>Questions & Answers</h3>
 <div class="accordion">Who is Syed Asif Ali?</div>
 <div class="panel"><p>Entrepreneur & founder of Pointika.</p></div>
+
 <div class="accordion">What is Pointika?</div>
 <div class="panel"><p>Digital media & communications brand focused on content & media visibility.</p></div>
+
 <div class="accordion">Is Syed Asif Ali linked with Point Media?</div>
 <div class="panel"><p>Yes, associated with Point Media initiative.</p></div>
+
 <div class="accordion">When was Pointika launched?</div>
 <div class="panel"><p>Launched to expand online media & brand presence.</p></div>
+
 <div class="accordion">Where does Pointika operate?</div>
 <div class="panel"><p>Primarily UAE and Pakistan markets.</p></div>
 </section>
@@ -146,7 +156,6 @@ footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:v
 <p>Personal Website: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a></p>
 </div>
 </section>
-
 </main>
 
 <footer>
@@ -154,16 +163,23 @@ footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:v
 </footer>
 
 <script>
-// Accordion functionality
+// Accordion functionality with smooth transition
 var acc = document.getElementsByClassName("accordion");
-for(let i=0;i<acc.length;i++){
-  acc[i].addEventListener("click",function(){
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel=this.nextElementSibling;
-    if(panel.style.display==="block"){panel.style.display="none";}
-    else{panel.style.display="block";}
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+      panel.style.paddingTop = "0";
+      panel.style.paddingBottom = "0";
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.paddingTop = "15px";
+      panel.style.paddingBottom = "15px";
+    } 
   });
-});
+}
 </script>
 
 </body>
