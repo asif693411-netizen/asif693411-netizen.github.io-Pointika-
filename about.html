@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Pointika — Digital Media & Storytelling</title>
+<meta name="description" content="Learn about Pointika, the storytelling and digital media sub-brand of Point Media. Discover our mission, expertise, and approach to digital campaigns and influencer management.">
+
+<link rel="canonical" href="https://pointika.link/about.html">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pointika",
+  "url": "https://pointika.link/about.html",
+  "logo": "logo.png",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Point Media",
+    "url": "https://pointmedia.link"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Syed Asif Ali",
+    "url": "https://syedasifali.link",
+    "sameAs": [
+      "https://www.linkedin.com/in/pointmedia",
+      "https://www.instagram.com/boxer_01101"
+    ]
+  },
+  "sameAs": [
+    "https://www.facebook.com/share/1GBFzaSBFg/?mibextid=qi2Omg",
+    "https://www.instagram.com/pointika?igsh=MTJiaHk2b3VsaW4wcw==",
+    "https://www.tiktok.com/@pointika?_r=1&_t=ZS-92ZjspYbH50"
+  ],
+  "knowsAbout": ["Digital Storytelling","Influencer Management","Content Creation","Social Media Campaigns"]
+}
+</script>
+
+<style>
+body{margin:0;font-family:Arial;background:#0b0d12;color:#fff;line-height:1.7}
+/* NAVIGATION */
+nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.5)}
+.nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:20px;font-weight:bold;color:#60a5fa}
+.menu{display:flex;gap:25px}
+.menu a{color:#e5e7eb;text-decoration:none;font-weight:bold}
+.menu a:hover{color:#60a5fa}
+.menu-btn{display:none;font-size:22px;cursor:pointer}
+/* MOBILE */
+@media(max-width:768px){.menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:20px;height:100vh;transition:.3s}.menu.show{right:0}.menu-btn{display:block}}
+header{background:linear-gradient(135deg,#4f46e5,#22d3ee);padding:120px 20px 60px;text-align:center}
+header h1{margin:0;font-size:36px;color:#fff}
+header p{max-width:800px;margin:15px auto 0;color:#cbd5f5}
+section{max-width:1100px;margin:auto;padding:60px 20px}
+h2{color:#60a5fa;margin-bottom:20px}
+.card{background:#121826;padding:30px;border-radius:16px;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.4)}
+ul{margin-left:20px}
+footer{text-align:center;padding:30px;background:#020617;color:#aaa}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">Pointika</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="press.html">Press</a>
+      <a href="founder.html">Founder</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <h1>About Pointika</h1>
+  <p>The creative storytelling and digital media sub-brand of Point Media, delivering campaigns, influencer management, and strategic content solutions.</p>
+</header>
+
+<section>
+<div class="card">
+<h2>Our Mission</h2>
+<p>Pointika aims to elevate digital storytelling and content creation for brands, influencers, and public figures. We provide strategic campaigns and digital growth solutions that maximize engagement and visibility.</p>
+</div>
+
+<div class="card">
+<h2>Expertise & Services</h2>
+<ul>
+<li>Influencer campaign management</li>
+<li>Creative content production</li>
+<li>Social media strategy & analytics</li>
+<li>Brand storytelling & narrative development</li>
+<li>Digital consultation for high-profile clients</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Approach</h2>
+<p>We combine creativity, analytics, and strategic planning to craft campaigns that resonate with audiences. Every project is tailored for maximum engagement, credibility, and measurable results across platforms like Instagram, TikTok, YouTube, and LinkedIn.</p>
+</div>
+
+<div class="card">
+<h2>Why Choose Pointika</h2>
+<ul>
+<li>Sub-brand of established Point Media</li>
+<li>Proven expertise in influencer and digital campaigns</li>
+<li>Data-driven strategy and creative storytelling</li>
+<li>Experience with top influencers in MENA region</li>
+<li>Comprehensive end-to-end digital solutions</li>
+</ul>
+</div>
+</section>
+
+<footer>
+© 2025 Pointika · Sub-Brand of Point Media
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById("menu").classList.toggle("show")}
+document.addEventListener("click",function(e){const menu=document.getElementById("menu");const btn=document.querySelector(".menu-btn");if(!menu.contains(e.target)&&!btn.contains(e.target)){menu.classList.remove("show")}})
+</script>
+
+</body>
+</html>
