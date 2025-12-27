@@ -15,11 +15,12 @@
   "@type": "Organization",
   "name": "Pointika",
   "url": "https://pointika.link/services.html",
-  "logo": "logo.png",
+  "logo": "https://pointika.link/logo.png",
   "parentOrganization": {
     "@type": "Organization",
     "name": "Point Media",
-    "url": "https://pointmedia.link"
+    "url": "https://pointmedia.link",
+    "logo": "https://pointmedia.link/logo.png"
   },
   "founder": {
     "@type": "Person",
@@ -40,7 +41,8 @@ body{margin:0;font-family:Arial;background:#0b0d12;color:#fff;line-height:1.7}
 /* NAVIGATION */
 nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.5)}
 .nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:20px;font-weight:bold;color:#60a5fa}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:bold;color:#60a5fa}
+.logo img{height:32px}
 .menu{display:flex;gap:25px}
 .menu a{color:#e5e7eb;text-decoration:none;font-weight:bold}
 .menu a:hover{color:#60a5fa}
@@ -48,6 +50,7 @@ nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;box-shadow:0
 /* MOBILE */
 @media(max-width:768px){.menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:20px;height:100vh;transition:.3s}.menu.show{right:0}.menu-btn{display:block}}
 header{background:linear-gradient(135deg,#4f46e5,#22d3ee);padding:120px 20px 60px;text-align:center}
+header img{max-height:80px;margin-bottom:15px}
 header h1{margin:0;font-size:36px;color:#fff}
 header p{max-width:800px;margin:15px auto 0;color:#cbd5f5}
 section{max-width:1100px;margin:auto;padding:60px 20px}
@@ -62,7 +65,7 @@ footer{text-align:center;padding:30px;background:#020617;color:#aaa}
 <!-- NAV -->
 <nav>
   <div class="nav-container">
-    <div class="logo">Pointika</div>
+    <div class="logo"><img src="logo.png" alt="Pointika Logo"> Pointika</div>
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
@@ -76,6 +79,7 @@ footer{text-align:center;padding:30px;background:#020617;color:#aaa}
 </nav>
 
 <header>
+  <img src="logo.png" alt="Pointika Logo">
   <h1>Pointika Services</h1>
   <p>Comprehensive digital media solutions: influencer campaigns, content creation, and strategic storytelling for brands and public figures.</p>
 </header>
