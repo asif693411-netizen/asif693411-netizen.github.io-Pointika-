@@ -55,27 +55,55 @@ nav.show{display:flex}
 }
 </style>
 
-<!-- JSON-LD -->
+<!-- 🔥 STRONGEST JSON-LD + BREADCRUMB + BRAND + ORG -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "name":"Syed Asif Ali",
-  "birthDate":"1997-01-23",
-  "birthPlace":{"@type":"Place","name":"South Waziristan Agency, Pakistan"},
-  "jobTitle":"Founder & Digital Creator",
-  "url":"https://syedasifali.link",
-  "image":"https://pointmedia.link/profile.jpg",
-  "telephone":"+971527157894",
-  "email":"mailto:contact@syedasifali.link",
-  "sameAs":[
-    "https://www.linkedin.com/in/pointmedia",
-    "https://www.instagram.com/boxer_01101",
-    "https://x.com/Boxer_01101",
-    "https://www.youtube.com/@AsifAli-Digital",
-    "https://www.tiktok.com/@pointika.media",
-    "https://medium.com/@asif693411",
-    "https://www.facebook.com/pointmedia"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://pointmedia.link/founder.html#syed-asif-ali",
+      "name": "Syed Asif Ali",
+      "birthDate": "1997-01-23",
+      "birthPlace": {"@type":"Place","name":"South Waziristan Agency, Pakistan"},
+      "jobTitle": "Founder & Digital Creator",
+      "url": "https://pointmedia.link/founder.html",
+      "image": "https://pointmedia.link/profile.jpg",
+      "worksFor": {"@id":"https://pointmedia.link/#organization"},
+      "owns": {"@id":"https://pointika.link/#brand"},
+      "sameAs": [
+        "https://www.linkedin.com/in/pointmedia",
+        "https://www.instagram.com/boxer_01101",
+        "https://x.com/Boxer_01101",
+        "https://www.youtube.com/@AsifAli-Digital",
+        "https://www.tiktok.com/@pointika.media",
+        "https://medium.com/@asif693411",
+        "https://www.facebook.com/pointmedia"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://pointmedia.link/#organization",
+      "name": "Point Media",
+      "url": "https://pointmedia.link",
+      "logo": {"@type":"ImageObject","url":"https://pointmedia.link/logo.png"},
+      "founder": {"@id":"https://pointmedia.link/founder.html#syed-asif-ali"}
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://pointika.link/#brand",
+      "name": "Pointika",
+      "url": "https://pointika.link",
+      "logo": {"@type":"ImageObject","url":"https://pointika.link/logo1.png"},
+      "founder": {"@id":"https://pointmedia.link/founder.html#syed-asif-ali"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://pointmedia.link/"},
+        {"@type":"ListItem","position":2,"name":"Founder","item":"https://pointmedia.link/founder.html"}
+      ]
+    }
   ]
 }
 </script>
@@ -106,20 +134,17 @@ nav.show{display:flex}
 <div class="card">
 <img src="profile.jpg" alt="Syed Asif Ali" class="profile-img" loading="lazy">
 <p><strong>Syed Asif Ali</strong> is a digital media creator, entrepreneur, and communications professional based in the UAE and Pakistan. He is the founder of <strong>Point Media</strong> and <strong>Pointika</strong>, with expertise in content creation, media visibility, and strategic storytelling.</p>
-
 <p style="margin-top:15px;"><strong>Inspirational Story & Achievements:</strong></p>
-<p>Syed Asif Ali was born into a low-income family in South Waziristan Agency, Pakistan. Facing extreme hardships including terrorism in his region, limited resources, and minimal government support, he overcame enormous challenges to pursue his dream in digital media. Despite these obstacles, he self-taught digital media and communications skills, building expertise without formal institutional training.</p>
-<p>Through perseverance and dedication, he established <strong>Point Media</strong> and its sub-brand <strong>Pointika</strong>, achieving global recognition. His journey is marked by:</p>
+<p>Born into South Waziristan, Syed Ali overcame extreme challenges including terrorism and limited resources to become a global digital entrepreneur. Achievements include:</p>
 <ul>
-<li>Building Point Media & Pointika from scratch into recognized digital brands</li>
-<li>Managing campaigns for high-profile influencers and public figures</li>
-<li>Creating strategic storytelling for celebrity digital management</li>
-<li>Featured on TechBullion and other international media outlets</li>
-<li>Leading digital transformation initiatives for emerging brands in MENA</li>
-<li>Empowering brands with social media campaign strategies and online visibility</li>
-<li>Turning personal challenges into global digital opportunities</li>
-<li>Resilience, creativity, and dedication in extremely challenging circumstances</li>
-<li>Inspirational story for young entrepreneurs worldwide</li>
+<li>Building Point Media & Pointika from scratch</li>
+<li>Managing campaigns for high-profile influencers</li>
+<li>Strategic storytelling & celebrity digital management</li>
+<li>Featured on TechBullion & other media</li>
+<li>Leading digital transformation initiatives for MENA brands</li>
+<li>Empowering brands with social media campaigns & visibility</li>
+<li>Turning personal challenges into global opportunities</li>
+<li>Inspiring entrepreneurs worldwide</li>
 </ul>
 </div>
 </section>
