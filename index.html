@@ -18,8 +18,12 @@ body{margin:0;font-family:'Poppins', sans-serif;background:var(--bg);color:#fff;
 /* NAVIGATION */
 nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.5); border-bottom: 1px solid #1e293b;}
 .nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:bold;color:var(--neon);letter-spacing:1px; text-decoration: none;}
-.logo img{height:40px;border-radius:5px; filter: drop-shadow(0 0 5px var(--neon));}
+
+/* LOGO FIX */
+.logo{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:bold;color:var(--neon);letter-spacing:1px; text-decoration: none; transition: 0.3s;}
+.logo img{height:40px; width: auto; border-radius:5px; filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.6));}
+.logo:hover { opacity: 0.8; }
+
 .menu{display:flex;gap:25px}
 .menu a{color:#e5e7eb;text-decoration:none;font-weight:500;font-size:14px;transition:0.3s;}
 .menu a:hover, .menu a.active{color:var(--neon)}
