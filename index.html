@@ -61,7 +61,7 @@ a{color:var(--neon);text-decoration:none; font-weight: 600;}
       <img src="logo1.png" alt="Pointika Logo">
       <span>POINTIKA</span>
     </a>
-    <div class="menu-btn" id="menu-btn">☰</div>
+    <div class="menu-btn" id="menu-btn" aria-label="Toggle Navigation">☰</div>
     <div class="menu" id="menu">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
@@ -74,38 +74,36 @@ a{color:var(--neon);text-decoration:none; font-weight: 600;}
 
 <header>
   <h1>POINT<span>IKA</span></h1>
-  <p>The Creative Pulse of <strong><a href="https://pointmedia.link" style="color:var(--brand);">Point Media</a></strong>. Redefining Digital Storytelling & Influencer Strategy.</p>
+  <p>The Creative Pulse of <strong><a href="https://point-media.link" target="_blank" style="color:var(--brand);">Point Media</a></strong>. Redefining Digital Storytelling & Influencer Strategy.</p>
 </header>
 
 <section>
-<div class="card">
-<h2>Who We Are</h2>
-<p>Pointika is the creative arm of the Point Media ecosystem. We don't just create content; we build digital legacies. Founded by <strong><a href="https://syedasifali.link">Syed Asif Ali</a></strong>, our mission is to transform the way influencers and brands communicate in a cluttered digital world.</p>
-</div>
-
-
-
-<div class="card">
-<h2>Our Core Expertise</h2>
-<div class="feature-list">
-  <div class="feature-item">
-    <strong>Influencer Growth</strong>
-    <p>We provide the strategic backbone for digital creators to scale their authority and reach across global markets.</p>
+  <div class="card">
+    <h2>Who We Are</h2>
+    <p>Pointika is the creative arm of the Point Media ecosystem. We don't just create content; we build digital legacies. Founded by <strong><a href="https://syedasifali.link" target="_blank">Syed Asif Ali</a></strong>, our mission is to transform the way influencers and brands communicate in a cluttered digital world.</p>
   </div>
-  <div class="feature-item">
-    <strong>Content Narrative</strong>
-    <p>Moving beyond trends, we craft data-driven stories that build genuine human connection and brand loyalty.</p>
+
+  <div class="card">
+    <h2>Our Core Expertise</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <strong>Influencer Growth</strong>
+        <p>We provide the strategic backbone for digital creators to scale their authority and reach across global markets.</p>
+      </div>
+      <div class="feature-item">
+        <strong>Content Narrative</strong>
+        <p>Moving beyond trends, we craft data-driven stories that build genuine human connection and brand loyalty.</p>
+      </div>
+      <div class="feature-item">
+        <strong>Digital Visibility</strong>
+        <p>Strategic amplification on TikTok, Instagram, and YouTube to ensure your message hits the right audience at the right time.</p>
+      </div>
+    </div>
   </div>
-  <div class="feature-item">
-    <strong>Digital Visibility</strong>
-    <p>Strategic amplification on TikTok, Instagram, and YouTube to ensure your message hits the right audience at the right time.</p>
-  </div>
-</div>
-</div>
 </section>
 
 <footer>
-© 2026 Pointika · A Creative Subsidiary of <a href="https://pointmedia.link" style="color:#fff;">Point Media</a> · Founded by Syed Asif Ali
+  © 2026 Pointika · A Creative Subsidiary of <a href="https://point-media.link" target="_blank" style="color:#fff;">Point Media</a> · Founded by Syed Asif Ali
 </footer>
 
 <script>
@@ -117,8 +115,12 @@ function toggleMenu(){
   menuBtn.textContent = menu.classList.contains("show") ? "✖" : "☰";
 }
 
-menuBtn.addEventListener("click", (e) => { e.stopPropagation(); toggleMenu(); });
-document.addEventListener("click",function(e){
+menuBtn.addEventListener("click", (e) => { 
+  e.stopPropagation(); 
+  toggleMenu(); 
+});
+
+document.addEventListener("click", function(e){
   if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
     menu.classList.remove("show");
     menuBtn.textContent = "☰";
