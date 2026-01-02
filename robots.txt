@@ -1,28 +1,28 @@
-# Robots.txt for Pointika (Official Sub-Brand)
-# Purpose: Clear indexing for Brand Awareness and Knowledge Panel
-
-User-agent: *
-Disallow: /private/
-Disallow: /tmp/
-Disallow: /backup/
-Disallow: /old/
-Allow: /
-# Ensuring Brand Assets are indexed
-Allow: /logo.png
-Allow: /profile.jpg
-
-# Crawl-delay for standard bots
-Crawl-delay: 5
-
-# ONLY Pointika Sitemap (To avoid Cross-Domain confusion)
-Sitemap: https://pointika.link/sitemap.xml
-
-# Google-specific: Faster crawling for News & Knowledge Graph
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 2
-
-# Bing-specific
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 2
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://pointika.link/index.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://pointika.link/about.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://pointika.link/services.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://pointika.link/press.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://pointika.link/contact.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <priority>0.70</priority>
+  </url>
+</urlset>
