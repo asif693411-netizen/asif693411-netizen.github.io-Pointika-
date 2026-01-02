@@ -3,76 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pointika Services — Digital Media & Storytelling</title>
-<meta name="description" content="Explore the services offered by Pointika, the digital media and storytelling sub-brand of Point Media. We specialize in influencer management, creative content, and strategic campaigns.">
+<title>Our Services — Pointika | Digital Storytelling & Influencer Strategy</title>
+<meta name="description" content="Discover Pointika's expert services: Influencer management, creative storytelling, and social media strategy under the leadership of Point Media.">
 
 <link rel="canonical" href="https://pointika.link/services.html">
 
-<!-- JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Pointika",
-  "url": "https://pointika.link/services.html",
-  "logo": "https://pointika.link/logo.png",
-  "parentOrganization": {
-    "@type": "Organization",
-    "name": "Point Media",
-    "url": "https://pointmedia.link",
-    "logo": "https://pointmedia.link/logo.png"
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Syed Asif Ali",
-    "url": "https://syedasifali.link"
-  },
-  "sameAs": [
-    "https://www.facebook.com/share/1GBFzaSBFg/?mibextid=qi2Omg",
-    "https://www.instagram.com/pointika?igsh=MTJiaHk2b3VsaW4wcw==",
-    "https://www.tiktok.com/@pointika?_r=1&_t=ZS-92ZjspYbH50"
-  ],
-  "knowsAbout": ["Influencer Management","Social Media Strategy","Digital Campaigns","Content Creation","Brand Storytelling"]
+  "@graph": [
+    {
+      "@type": "Service",
+      "serviceType": "Influencer Management & Storytelling",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://pointika.link/#organization",
+        "name": "Pointika"
+      },
+      "areaServed": "Global",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pointika Media Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Content Creation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Strategy" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Campaigns" } }
+        ]
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://pointika.link/#organization",
+      "name": "Pointika",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Point Media",
+        "url": "https://pointmedia.link"
+      }
+    }
+  ]
 }
 </script>
 
 <style>
-body{margin:0;font-family:Arial;background:#0b0d12;color:#fff;line-height:1.7}
-/* NAVIGATION */
+body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:#0b0d12;color:#fff;line-height:1.7;overflow-x:hidden;}
+
+/* NAVIGATION - Unified Style */
 nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.5)}
 .nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
 .logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:bold;color:#60a5fa}
-.logo img{height:32px}
+.logo img{height:32px;border-radius:4px;}
 .menu{display:flex;gap:25px}
-.menu a{color:#e5e7eb;text-decoration:none;font-weight:bold}
-.menu a:hover{color:#60a5fa}
-.menu-btn{display:none;font-size:22px;cursor:pointer}
-/* MOBILE */
-@media(max-width:768px){.menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:20px;height:100vh;transition:.3s}.menu.show{right:0}.menu-btn{display:block}}
-header{background:linear-gradient(135deg,#4f46e5,#22d3ee);padding:120px 20px 60px;text-align:center}
-header img{max-height:80px;margin-bottom:15px}
+.menu a{color:#e5e7eb;text-decoration:none;font-weight:600;transition:0.3s;}
+.menu a:hover, .menu a.active{color:#60a5fa}
+.menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
+
+@media(max-width:768px){
+  .menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:20px;height:100vh;transition:.3s;box-shadow:-5px 0 15px rgba(0,0,0,0.5);}
+  .menu.show{right:0}
+  .menu-btn{display:block}
+}
+
+/* HEADER */
+header{background:linear-gradient(135deg,#1e3a8a,#0b0d12);padding:140px 20px 80px;text-align:center}
+header img{max-height:80px;margin-bottom:15px;border-radius:8px;}
 header h1{margin:0;font-size:36px;color:#fff}
 header p{max-width:800px;margin:15px auto 0;color:#cbd5f5}
+
 section{max-width:1100px;margin:auto;padding:60px 20px}
-h2{color:#60a5fa;margin-bottom:20px}
-.card{background:#121826;padding:30px;border-radius:16px;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.4)}
-ul{margin-left:20px}
-footer{text-align:center;padding:30px;background:#020617;color:#aaa}
+h2{color:#60a5fa;margin-bottom:20px;border-left:4px solid #60a5fa;padding-left:15px;}
+.card{background:#121826;padding:35px;border-radius:18px;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.4);border:1px solid #1e293b;transition:0.3s;}
+.card:hover{border-color:#60a5fa;transform:translateY(-5px);}
+
+ul{margin-left:20px;color:#cbd5f5;}
+ul li{margin-bottom:8px;}
+
+footer{text-align:center;padding:40px;background:#020617;color:#94a3b8;font-size:14px;border-top:1px solid #1e293b;}
+a{color:#60a5fa;text-decoration:none;}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-container">
-    <div class="logo"><img src="logo.png" alt="Pointika Logo"> Pointika</div>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="logo"><img src="logo.png" alt="Pointika Logo"> POINTIKA</div>
+    <div class="menu-btn" id="menu-btn">☰</div>
     <div class="menu" id="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html" class="active">Services</a>
       <a href="press.html">Press</a>
-      <a href="founder.html">Founder</a>
       <a href="contact.html">Contact</a>
     </div>
   </div>
@@ -80,55 +100,72 @@ footer{text-align:center;padding:30px;background:#020617;color:#aaa}
 
 <header>
   <img src="logo.png" alt="Pointika Logo">
-  <h1>Pointika Services</h1>
-  <p>Comprehensive digital media solutions: influencer campaigns, content creation, and strategic storytelling for brands and public figures.</p>
+  <h1>Our Specialized Services</h1>
+  <p>Crafting impactful digital identities through storytelling, influencer management, and strategic campaigns under <strong>Point Media</strong>.</p>
 </header>
 
 <section>
 <div class="card">
 <h2>Influencer Management</h2>
-<p>We manage and grow influencer profiles, handle collaborations, and optimize content for maximum engagement across platforms.</p>
+<p>We manage and grow influencer profiles by handling high-value collaborations and optimizing content for maximum organic reach across the MENA region and beyond.</p>
 </div>
 
 <div class="card">
-<h2>Content Creation</h2>
+<h2>Creative Content Creation</h2>
 <ul>
-<li>Custom digital content production</li>
-<li>Photography & videography for social media</li>
-<li>Creative copywriting & messaging</li>
-<li>Visual storytelling for campaigns</li>
+<li>Digital content production tailored for TikTok & Reels</li>
+<li>Photography & professional videography</li>
+<li>Creative copywriting & brand messaging</li>
+<li>Strategic visual storytelling</li>
 </ul>
 </div>
 
 <div class="card">
 <h2>Social Media Strategy</h2>
-<p>Data-driven strategies to increase audience engagement, brand credibility, and online visibility across Instagram, TikTok, YouTube, LinkedIn, and more.</p>
+<p>Data-driven roadmaps to increase audience engagement, credibility, and online visibility on Instagram, TikTok, YouTube, and LinkedIn.</p>
 </div>
 
 <div class="card">
-<h2>Digital Campaigns</h2>
+<h2>Digital Campaign Execution</h2>
 <ul>
-<li>End-to-end campaign management</li>
-<li>Targeted content distribution</li>
-<li>Performance analytics & reporting</li>
-<li>Collaborations with top influencers and brands</li>
+<li>End-to-end management of viral campaigns</li>
+<li>Niche content distribution & placement</li>
+<li>Performance analytics and ROI reporting</li>
+<li>Cross-brand collaborations</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>Brand Storytelling</h2>
-<p>Crafting compelling narratives that connect brands and public figures with their audiences, enhancing trust and digital presence.</p>
+<h2>Brand Identity & Storytelling</h2>
+<p>We help brands and public figures find their voice, crafting compelling narratives that build long-term trust and authority in the digital space.</p>
 </div>
 
 </section>
 
 <footer>
-© 2025 Pointika · Sub-Brand of Point Media
+© 2026 Pointika · A Sub-Brand of Point Media · Managed by Syed Asif Ali
 </footer>
 
 <script>
-function toggleMenu(){document.getElementById("menu").classList.toggle("show")}
-document.addEventListener("click",function(e){const menu=document.getElementById("menu");const btn=document.querySelector(".menu-btn");if(!menu.contains(e.target)&&!btn.contains(e.target)){menu.classList.remove("show")}})
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+function toggleMenu(){
+  menu.classList.toggle("show");
+  menuBtn.textContent = menu.classList.contains("show") ? "✖" : "☰";
+}
+
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleMenu();
+});
+
+document.addEventListener("click",function(e){
+  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
+    menu.classList.remove("show");
+    menuBtn.textContent = "☰";
+  }
+});
 </script>
 
 </body>
