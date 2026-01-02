@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Founder — Point Media</title>
-<meta name="description" content="Meet Syed Asif Ali, the founder of Point Media and Pointika. Learn about his journey, achievements, and vision for digital media and communications.">
+<title>Syed Asif Ali — Founder of Point Media & Pointika</title>
+<meta name="description" content="Meet Syed Asif Ali, the visionary founder of Point Media and Pointika. Discover his journey from South Waziristan to becoming a global digital entrepreneur.">
 
 <link rel="icon" type="image/png" href="logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -14,100 +14,79 @@
 :root{
 --bg:#0b0d12;--card:#121622;--border:#1f2435;
 --text:#e6eaf0;--muted:#9aa4b2;
---brand:#7c9cff;--accent:#2bd4c8;
+--brand:#60a5fa;--accent:#2bd4c8;
 }
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{background:var(--bg);color:var(--text);line-height:1.7}
+body{background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;}
 a{text-decoration:none;color:inherit}
 .container{max-width:1100px;margin:auto;padding:30px}
 
 /* HEADER */
-header{position:sticky;top:0;background:#0b0d12;border-bottom:1px solid var(--border);z-index:99}
-.header-inner{display:flex;justify-content:space-between;align-items:center}
+header{position:fixed;top:0;width:100%;background:rgba(11, 13, 18, 0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:1000}
+.header-inner{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{height:42px}
-.brand strong{font-size:20px;color:var(--brand)}
-nav{display:flex;gap:18px}
-nav a{color:var(--muted);font-weight:500;transition:.3s}
+.brand img{height:38px;border-radius:5px;}
+.brand strong{font-size:20px;color:var(--brand);letter-spacing:1px;}
+nav{display:flex;gap:20px}
+nav a{color:var(--muted);font-weight:500;transition:.3s;font-size:14px;}
 nav a:hover,.nav a.active{color:var(--brand)}
-.menu-btn{display:none;font-size:22px;cursor:pointer}
+.menu-btn{display:none;font-size:22px;cursor:pointer;color:white;}
 
-/* SECTIONS */
-section{padding:80px 0;border-top:1px solid var(--border)}
-h2{font-size:34px;margin-bottom:20px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px;text-align:center}
+/* HERO SECTION */
+.hero{padding:140px 0 60px;text-align:center;background:radial-gradient(circle at top, #1e293b 0%, #0b0d12 100%);}
+h2{font-size:36px;margin-bottom:20px;background:linear-gradient(to right, #fff, var(--brand));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 
-/* PROFILE IMAGE */
-.profile-img{width:180px;border-radius:50%;border:3px solid var(--brand);margin-bottom:20px;box-shadow:0 0 20px var(--brand),0 0 40px var(--accent);transition:transform .3s}
-.profile-img:hover{transform:scale(1.05)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:40px;text-align:center;box-shadow:0 20px 40px rgba(0,0,0,0.3);}
+.profile-img{width:180px;height:180px;border-radius:50%;border:4px solid var(--brand);margin-bottom:25px;object-fit:cover;box-shadow:0 0 30px rgba(96, 165, 250, 0.3);transition:.4s;}
+.profile-img:hover{transform:rotate(5deg) scale(1.05);border-color:var(--accent);}
+
+/* LISTS */
+.achievements{text-align:left;max-width:700px;margin:30px auto;display:grid;grid-template-columns:1fr 1fr;gap:15px;}
+.achievements li{list-style:none;font-size:14px;color:var(--muted);display:flex;align-items:center;gap:10px;}
+.achievements li::before{content:'✓';color:var(--brand);font-weight:bold;}
 
 /* SOCIAL */
-.social{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin-top:15px}
-.social a{font-size:22px;color:var(--muted);transition:.3s}
-.social a:hover{color:var(--brand)}
+.social{display:flex;gap:25px;justify-content:center;margin-top:30px;padding:20px;background:rgba(255,255,255,0.03);border-radius:50px;}
+.social a{font-size:24px;color:var(--muted);transition:.3s;}
+.social a:hover{color:var(--brand);transform:translateY(-5px);}
 
-footer{text-align:center;padding:30px;border-top:1px solid var(--border);color:var(--muted)}
+footer{text-align:center;padding:40px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;}
 
-@media(max-width:900px){
-nav{display:none;flex-direction:column;position:absolute;top:70px;right:20px;background:#0b0d12;border:1px solid var(--border);border-radius:14px;padding:15px}
-nav.show{display:flex}
-.menu-btn{display:block}
+@media(max-width:768px){
+nav{position:fixed;top:68px;right:-100%;background:#0b0d12;flex-direction:column;width:250px;height:100vh;padding:40px;transition:.4s;border-left:1px solid var(--border);}
+nav.show{right:0;}
+.menu-btn{display:block;}
+.achievements{grid-template-columns:1fr;}
 }
 </style>
 
-<!-- 🔥 STRONGEST JSON-LD + BREADCRUMB + BRAND + ORG -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://pointmedia.link/founder.html#syed-asif-ali",
+      "@id": "https://syedasifali.link/#person",
       "name": "Syed Asif Ali",
-      "birthDate": "1997-01-23",
-      "birthPlace": {"@type":"Place","name":"South Waziristan Agency, Pakistan"},
-      "jobTitle": "Founder & Digital Creator",
-      "url": "https://pointmedia.link/founder.html",
-      "image": "https://pointmedia.link/profile.jpg",
-      "worksFor": {"@id":"https://pointmedia.link/#organization"},
-      "owns": {"@id":"https://pointika.link/#brand"},
+      "jobTitle": "Founder & CEO",
+      "description": "Founder of Point Media and Pointika, a digital media entrepreneur from South Waziristan based in UAE.",
       "sameAs": [
         "https://www.linkedin.com/in/pointmedia",
         "https://www.instagram.com/boxer_01101",
         "https://x.com/Boxer_01101",
         "https://www.youtube.com/@AsifAli-Digital",
         "https://www.tiktok.com/@pointika.media",
-        "https://medium.com/@asif693411",
-        "https://www.facebook.com/pointmedia"
+        "https://techbullion.com/syed-asif-ali-from-techbullion-feature-to-global-digital-media-growth/"
       ]
     },
     {
       "@type": "Organization",
-      "@id": "https://pointmedia.link/#organization",
       "name": "Point Media",
-      "url": "https://pointmedia.link",
-      "logo": {"@type":"ImageObject","url":"https://pointmedia.link/logo.png"},
-      "founder": {"@id":"https://pointmedia.link/founder.html#syed-asif-ali"}
-    },
-    {
-      "@type": "Brand",
-      "@id": "https://pointika.link/#brand",
-      "name": "Pointika",
-      "url": "https://pointika.link",
-      "logo": {"@type":"ImageObject","url":"https://pointika.link/logo1.png"},
-      "founder": {"@id":"https://pointmedia.link/founder.html#syed-asif-ali"}
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Home","item":"https://pointmedia.link/"},
-        {"@type":"ListItem","position":2,"name":"Founder","item":"https://pointmedia.link/founder.html"}
-      ]
+      "founder": {"@id": "https://syedasifali.link/#person"}
     }
   ]
 }
 </script>
-
 </head>
 <body>
 
@@ -115,9 +94,9 @@ nav.show{display:flex}
 <div class="container header-inner">
   <div class="brand">
     <img src="logo.png" alt="Point Media Logo">
-    <strong>Point Media</strong>
+    <strong>POINT MEDIA</strong>
   </div>
-  <i class="fas fa-bars menu-btn" onclick="toggleMenu()"></i>
+  <i class="fas fa-bars menu-btn" id="menu-toggle"></i>
   <nav id="nav">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
@@ -129,47 +108,57 @@ nav.show{display:flex}
 </div>
 </header>
 
-<section class="container">
-<h2>Founder — Syed Asif Ali</h2>
-<div class="card">
-<img src="profile.jpg" alt="Syed Asif Ali" class="profile-img" loading="lazy">
-<p><strong>Syed Asif Ali</strong> is a digital media creator, entrepreneur, and communications professional based in the UAE and Pakistan. He is the founder of <strong>Point Media</strong> and <strong>Pointika</strong>, with expertise in content creation, media visibility, and strategic storytelling.</p>
-<p style="margin-top:15px;"><strong>Inspirational Story & Achievements:</strong></p>
-<p>Born into South Waziristan, Syed Ali overcame extreme challenges including terrorism and limited resources to become a global digital entrepreneur. Achievements include:</p>
-<ul>
-<li>Building Point Media & Pointika from scratch</li>
-<li>Managing campaigns for high-profile influencers</li>
-<li>Strategic storytelling & celebrity digital management</li>
-<li>Featured on TechBullion & other media</li>
-<li>Leading digital transformation initiatives for MENA brands</li>
-<li>Empowering brands with social media campaigns & visibility</li>
-<li>Turning personal challenges into global opportunities</li>
-<li>Inspiring entrepreneurs worldwide</li>
-</ul>
-</div>
-</section>
+<div class="hero">
+  <section class="container">
+    <h2>Meet The Founder</h2>
+    <div class="card">
+      <img src="profile.jpg" alt="Syed Asif Ali" class="profile-img">
+      <h3>Syed Asif Ali</h3>
+      <p style="color:var(--brand); font-weight:600; margin-bottom:15px;">Founder & Digital Strategist</p>
+      <p>Syed Asif Ali is a resilient entrepreneur who transformed his life from the rugged terrains of South Waziristan to the digital hubs of the UAE. He is the driving force behind <strong>Point Media</strong> and <strong>Pointika</strong>.</p>
+      
+      <ul class="achievements">
+        <li>Global Media Strategist</li>
+        <li>Founder of Pointika</li>
+        <li>Influencer Growth Expert</li>
+        <li>Digital Transformation Leader</li>
+        <li>Featured Storyteller</li>
+        <li>MENA Region Specialist</li>
+      </ul>
 
-<section class="container">
-<h2>Connect With Syed Asif Ali</h2>
-<div class="social">
-  <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
-  <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
-  <a href="https://medium.com/@asif693411" target="_blank"><i class="fab fa-medium"></i></a>
-  <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
-  <a href="https://www.facebook.com/pointmedia" target="_blank"><i class="fab fa-facebook"></i></a>
+      <div class="social">
+        <a href="https://www.instagram.com/boxer_01101" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@pointika.media" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/@AsifAli-Digital" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/pointmedia" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/Boxer_01101" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </section>
 </div>
-</section>
 
 <footer>
-© 2025 Point Media · Digital Media & Communications
+© 2026 Point Media · Leading Digital Communications · Founded by Syed Asif Ali
 </footer>
 
 <script>
-function toggleMenu(){
-  document.getElementById("nav").classList.toggle("show");
-}
+const menuBtn = document.getElementById('menu-toggle');
+const nav = document.getElementById('nav');
+
+menuBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  nav.classList.toggle('show');
+  menuBtn.classList.toggle('fa-bars');
+  menuBtn.classList.toggle('fa-times');
+});
+
+document.addEventListener('click', (e) => {
+  if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
+    nav.classList.remove('show');
+    menuBtn.classList.add('fa-bars');
+    menuBtn.classList.remove('fa-times');
+  }
+});
 </script>
 
 </body>
