@@ -1,5 +1,5 @@
-# Robots.txt for Point Media & Pointika
-# Allow all main search engines to crawl essential content
+# Robots.txt for Pointika (Official Sub-Brand)
+# Purpose: Clear indexing for Brand Awareness and Knowledge Panel
 
 User-agent: *
 Disallow: /private/
@@ -7,26 +7,22 @@ Disallow: /tmp/
 Disallow: /backup/
 Disallow: /old/
 Allow: /
+# Ensuring Brand Assets are indexed
+Allow: /logo.png
+Allow: /profile.jpg
 
-# Crawl-delay (optional, avoids server overload)
-Crawl-delay: 10
+# Crawl-delay for standard bots
+Crawl-delay: 5
 
-# Sitemap locations for faster indexing
-Sitemap: https://pointmedia.link/sitemap.xml
+# ONLY Pointika Sitemap (To avoid Cross-Domain confusion)
 Sitemap: https://pointika.link/sitemap.xml
 
-# Google-specific rules
+# Google-specific: Faster crawling for News & Knowledge Graph
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 5
+Crawl-delay: 2
 
-# Bing-specific rules
+# Bing-specific
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 5
-
-# Important notes:
-# - 'Disallow' blocks irrelevant folders from crawling
-# - 'Allow: /' ensures main pages, logos, images, and JSON-LD are indexed
-# - Sitemap locations guide search engines to all your URLs
-# - Crawl-delay prevents server overload while crawling
+Crawl-delay: 2
