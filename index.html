@@ -4,168 +4,154 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pointika — Digital Media & Storytelling Sub-Brand</title>
-<meta name="description" content="Pointika is a digital media and storytelling platform under Point Media, focused on content creation, influencer collaborations, and strategic media campaigns.">
-<link rel="canonical" href="https://pointika.link/index.html">
+<title>Pointika — Official Digital Media & Storytelling Brand</title>
+<meta name="description" content="Pointika is the official digital storytelling and media platform under Point Media. Specializing in influencer collaborations and strategic content campaigns.">
+<link rel="canonical" href="https://pointika.link/">
 
-<!-- CORRECTED ORGANIZATION + BRAND + FOUNDER + BREADCRUMB JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://pointika.link/#organization",
+      "@type": "Brand",
+      "@id": "https://pointika.link/#brand",
       "name": "Pointika",
+      "alternateName": "Pointika Media",
       "url": "https://pointika.link/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://pointika.link/logo.png",
-        "width": 512,
-        "height": 512
-      },
+      "logo": "https://pointika.link/logo.png",
       "founder": {
         "@type": "Person",
-        "name": "Syed Asif Ali",
-        "url": "https://syedasifali.link",
-        "sameAs": [
-          "https://www.instagram.com/boxer_01101",
-          "https://www.linkedin.com/in/pointmedia"
-        ]
+        "@id": "https://syedasifali.link/#person",
+        "name": "Syed Asif Ali"
       },
-      "brand": {
-        "@type": "Brand",
-        "name": "Pointika",
-        "description": "Pointika is a digital media and storytelling brand under Point Media, focused on influencer collaborations and content creation.",
-        "sameAs": [
-          "https://www.instagram.com/pointika",
-          "https://www.tiktok.com/@pointika",
-          "https://www.facebook.com/share/1GBFzaSBFg/?mibextid=qi2Omg"
-        ],
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://pointika.link/logo.png",
-          "width": 512,
-          "height": 512
-        },
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "Point Media",
-          "url": "https://pointmedia.link"
-        }
-      }
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": "https://pointmedia.link/#organization",
+        "name": "Point Media"
+      },
+      "sameAs": [
+        "https://www.instagram.com/pointika",
+        "https://www.tiktok.com/@pointika",
+        "https://www.facebook.com/share/1GBFzaSBFg/"
+      ]
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://pointika.link/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://pointika.link/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "About",
-          "item": "https://pointika.link/about.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Pointika",
-          "item": "https://pointika.link/"
-        }
-      ]
+      "@type": "WebSite",
+      "@id": "https://pointika.link/#website",
+      "url": "https://pointika.link/",
+      "name": "Pointika Official",
+      "publisher": {"@id": "https://pointika.link/#brand"}
     }
   ]
 }
 </script>
 
 <style>
-body{margin:0;font-family:Arial;background:#0b0d12;color:#fff;line-height:1.7}
-/* NAVIGATION */
+body{margin:0;font-family:'Segoe UI', Tahoma, sans-serif;background:#0b0d12;color:#fff;line-height:1.7;overflow-x:hidden;}
 nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.5)}
 .nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:8px;font-size:20px;font-weight:bold;color:#60a5fa}
-.logo img{height:42px}
+.logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:bold;color:#60a5fa;letter-spacing:1px;}
+.logo img{height:38px;border-radius:5px;}
 .menu{display:flex;gap:25px}
-.menu a{color:#e5e7eb;text-decoration:none;font-weight:bold}
-.menu a:hover{color:#60a5fa}
-.menu-btn{display:none;font-size:22px;cursor:pointer}
-/* MOBILE */
+.menu a{color:#e5e7eb;text-decoration:none;font-weight:600;font-size:15px;transition:0.3s;}
+.menu a:hover, .menu a.active{color:#60a5fa}
+.menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
+
 @media(max-width:768px){
-.menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:240px;padding:20px;height:100vh;transition:.3s}
+.menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:260px;padding:30px;height:100vh;transition:.3s;box-shadow:-5px 0 15px rgba(0,0,0,0.5);}
 .menu.show{right:0}
 .menu-btn{display:block}
 }
-header{background:linear-gradient(135deg,#4f46e5,#22d3ee);padding:120px 20px 60px;text-align:center}
-header h1{margin:0;font-size:36px;color:#fff}
-header p{max-width:800px;margin:15px auto 0;color:#cbd5f5}
+
+header{background:linear-gradient(135deg,#1e3a8a,#0b0d12);padding:150px 20px 80px;text-align:center}
+header h1{margin:0;font-size:42px;color:#fff;letter-spacing:2px;}
+header p{max-width:800px;margin:15px auto 0;color:#cbd5f5;font-size:18px;}
+
 section{max-width:1100px;margin:auto;padding:60px 20px}
-h2{color:#60a5fa;margin-bottom:20px}
-.card{background:#121826;padding:30px;border-radius:16px;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.4)}
-footer{text-align:center;padding:30px;background:#020617;color:#aaa}
+h2{color:#60a5fa;margin-bottom:20px;font-size:28px;}
+.card{background:#121826;padding:35px;border-radius:18px;margin-bottom:40px;box-shadow:0 10px 30px rgba(0,0,0,0.4);border:1px solid #1e293b;}
+
+.feature-list{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:20px;text-align:left;margin-top:20px;}
+.feature-item{background:rgba(255,255,255,0.03);padding:20px;border-radius:12px;border-left:4px solid #60a5fa;}
+
+footer{text-align:center;padding:40px;background:#020617;color:#94a3b8;font-size:14px;border-top:1px solid #1e293b;}
+a{color:#60a5fa;text-decoration:none;}
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-container">
     <div class="logo">
       <img src="logo.png" alt="Pointika Logo">
-      <span>Pointika</span>
+      <span>POINTIKA</span>
     </div>
-    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="menu-btn" id="menu-btn">☰</div>
     <div class="menu" id="menu">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="press.html">Press</a>
-      <a href="founder.html">Founder</a>
       <a href="contact.html">Contact</a>
     </div>
   </div>
 </nav>
 
 <header>
-  <h1>Pointika</h1>
-  <p>Digital Media & Storytelling Sub-Brand of Point Media. Focused on influencer campaigns, content creation, and social media strategy.</p>
+  <h1>POINTIKA</h1>
+  <p>The Creative Pulse of <strong><a href="https://pointmedia.link" style="color:#fff;">Point Media</a></strong>. Redefining Digital Storytelling & Influencer Strategy.</p>
 </header>
 
 <section>
 <div class="card">
 <h2>Who We Are</h2>
-<p>Pointika is the creative arm of Point Media, delivering digital storytelling, influencer collaborations, and strategic content campaigns for brands and individuals.</p>
+<p>Pointika is a premier digital storytelling brand under the umbrella of Point Media. Founded by <strong><a href="https://syedasifali.link">Syed Asif Ali</a></strong>, we specialize in crafting unique digital narratives that connect global influencers with impactful brand campaigns.</p>
 </div>
 
 <div class="card">
 <h2>Our Expertise</h2>
-<ul>
-<li>Influencer management & collaboration</li>
-<li>Digital content creation & strategy</li>
-<li>Social media campaign planning & execution</li>
-<li>Brand storytelling & online visibility</li>
-<li>Media consultation for high-profile clients</li>
-</ul>
+<div class="feature-list">
+  <div class="feature-item">
+    <strong>Influencer Growth</strong>
+    <p>Strategic management for rising digital stars.</p>
+  </div>
+  <div class="feature-item">
+    <strong>Content Strategy</strong>
+    <p>Data-driven storytelling that engages audiences.</p>
+  </div>
+  <div class="feature-item">
+    <strong>Brand Visibility</strong>
+    <p>Amplifying reach across TikTok, Instagram, and beyond.</p>
+  </div>
 </div>
-
-<div class="card">
-<h2>Our Vision</h2>
-<p>To empower brands and creators in MENA and beyond, ensuring impactful storytelling, engaging content, and measurable digital growth.</p>
 </div>
 </section>
 
 <footer>
-© 2025 Pointika · Sub-Brand of Point Media
+© 2026 Pointika · Official Sub-Brand of Point Media · Founder: Syed Asif Ali
 </footer>
 
 <script>
-function toggleMenu(){document.getElementById("menu").classList.toggle("show")}
-document.addEventListener("click",function(e){const menu=document.getElementById("menu");const btn=document.querySelector(".menu-btn");if(!menu.contains(e.target)&&!btn.contains(e.target)){menu.classList.remove("show")}})
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+function toggleMenu(){
+  menu.classList.toggle("show");
+  menuBtn.textContent = menu.classList.contains("show") ? "✖" : "☰";
+}
+
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  toggleMenu();
+});
+
+document.addEventListener("click",function(e){
+  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
+    menu.classList.remove("show");
+    menuBtn.textContent = "☰";
+  }
+});
 </script>
 
 </body>
