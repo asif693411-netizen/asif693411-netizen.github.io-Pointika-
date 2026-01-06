@@ -1,55 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pointika.link/</loc>
+    <loc>https://pointika.link/index.html</loc>
     <lastmod>2026-01-06</lastmod>
-    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://pointika.link/logo.png</image:loc>
-      <image:caption>Pointika - Creative Subsidiary of Point Media</image:caption>
-    </image:image>
   </url>
-
-  <url>
-    <loc>https://pointika.link/founder.html</loc>
-    <lastmod>2026-01-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://syedasifali.link/profile.jpg</image:loc>
-      <image:caption>Syed Asif Ali - Founder of Pointika &amp; Point Media</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://pointika.link/press.html</loc>
-    <lastmod>2026-01-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://pointika.link/about.html</loc>
-    <lastmod>2026-01-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://pointika.link/services.html</loc>
     <lastmod>2026-01-06</lastmod>
-    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pointika.link/press.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pointika.link/founder.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pointika.link/about.html</loc>
+    <lastmod>2026-01-06</lastmod>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://pointika.link/contact.html</loc>
     <lastmod>2026-01-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
-
 </urlset>
