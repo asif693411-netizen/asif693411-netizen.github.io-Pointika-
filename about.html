@@ -2,61 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 <title>About Pointika | Creative Media Hub by Syed Asif Ali</title>
 <meta name="description" content="Discover Pointika, the creative storytelling arm of Point Media. Founded by Syed Asif Ali, we specialize in influencer growth and digital brand reputation.">
 
 <link rel="canonical" href="https://pointika.link/about.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-:root { --neon: #00ffff; --brand: #60a5fa; --bg: #020617; --card: #0f172a; --border: #1e293b; }
-*{margin:0; padding:0; box-sizing:border-box;}
-body{font-family:'Poppins',sans-serif; background:var(--bg); color:#e5e7eb; line-height:1.7; overflow-x:hidden;}
-
-/* NAVIGATION - LOGO FIXED */
-nav{position:fixed; top:0; left:0; width:100%; background:rgba(2,6,23,0.95); z-index:1000; border-bottom:1px solid var(--border); backdrop-filter:blur(10px);}
-.nav-container{max-width:1200px; margin:auto; padding:15px 20px; display:flex; justify-content:space-between; align-items:center;}
-.logo-wrap{display:flex; align-items:center; gap:12px; text-decoration:none;}
-.logo-wrap img{height:38px; width:auto; display:block; border-radius:4px;}
-.logo-text{font-size:20px; font-weight:bold; color:var(--neon); letter-spacing:1px;}
-
-.menu{display:flex; gap:25px;}
-.menu a{color:#e5e7eb; text-decoration:none; font-size:14px; font-weight:500; transition:0.3s;}
-.menu a:hover, .menu a.active{color:var(--neon);}
-.menu-btn{display:none; font-size:24px; cursor:pointer; color:var(--neon);}
-
-@media(max-width:768px){
-  .menu{position:fixed; top:70px; right:-100%; background:var(--card); flex-direction:column; width:260px; padding:40px; height:calc(100vh - 70px); transition:0.4s; border-left:1px solid var(--border);}
-  .menu.show{right:0;}
-  .menu-btn{display:block;}
-  .menu a{font-size:16px; margin-bottom:15px;}
-}
-
-/* HEADER */
-header{background:radial-gradient(circle at top, #0a192f 0%, #020617 100%); padding:160px 20px 80px; text-align:center;}
-header h1{margin:0; font-size:48px; color:#fff; letter-spacing:-1px;}
-header p{max-width:800px; margin:15px auto 0; color:var(--brand); font-size:18px;}
-
-/* CONTENT */
-section{max-width:1100px; margin:auto; padding:60px 20px;}
-h2{color:var(--neon); margin-bottom:20px; font-size:28px;}
-.card{background:var(--card); padding:40px; border-radius:20px; border:1px solid var(--border); margin-bottom:40px; transition:0.3s;}
-.card:hover{box-shadow:0 0 20px rgba(0,255,255,0.1);}
-
-.brand-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:25px; margin-top:30px;}
-.brand-grid div{background:#020617; padding:30px; border-radius:15px; border:1px solid var(--border); transition:0.3s;}
-.brand-grid div:hover{border-color:var(--neon); transform:translateY(-5px);}
-.brand-grid div h3 {color:var(--brand); margin-bottom:10px;}
-
-footer{background:#020617; text-align:center; padding:50px 20px; color:#94a3b8; font-size:13px; border-top:1px solid var(--border);}
-footer a{color:var(--neon); text-decoration:none; font-weight:bold;}
-
-/* Style for links inside text */
-.text-link{color:var(--neon); text-decoration:none; font-weight:bold; border-bottom:1px solid transparent; transition:0.3s;}
-.text-link:hover{border-bottom:1px solid var(--neon);}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Orbitron:wght@400;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 <script type="application/ld+json">
 {
@@ -74,6 +29,8 @@ footer a{color:var(--neon); text-decoration:none; font-weight:bold;}
         "name":"Syed Asif Ali",
         "sameAs": [
           "https://syedasifali.link",
+          "https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/",
+          "https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/",
           "https://www.crunchbase.com/person/syed-asif-ali",
           "https://twitter.com/syedasifali"
         ]
@@ -88,9 +45,64 @@ footer a{color:var(--neon); text-decoration:none; font-weight:bold;}
   ]
 }
 </script>
+
+<style>
+:root { --accent: #2563eb; --bg: #f8fafc; --text: #0f172a; --glass: rgba(255, 255, 255, 0.4); }
+
+/* ANTI-COPY PROTECTION */
+* { 
+    margin:0; padding:0; box-sizing:border-box; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent; 
+}
+
+body { background: var(--bg); color: var(--text); font-family: 'Space Grotesk', sans-serif; overflow-x:hidden; }
+#particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+
+nav { position:fixed; top:0; width:100%; height:75px; z-index:5000; background: rgba(255, 255, 255, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.05); display: flex; align-items: center; }
+.nav-container { max-width:1200px; margin:auto; width: 100%; padding:0 25px; display:flex; justify-content:space-between; align-items:center; }
+.logo-wrap { display:flex; align-items:center; gap:12px; text-decoration:none; }
+.logo-wrap img { height:35px; border-radius:4px; }
+.logo-text { font-family:'Orbitron'; font-size:1.1rem; font-weight:900; color:var(--text); letter-spacing:3px; }
+
+.menu-trigger { width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); font-size: 20px; z-index: 6001; }
+
+.side-menu { position: fixed; top: 0; right: -100%; width: 180px; height: 100vh; background: rgba(255, 255, 255, 0.98); z-index: 6000; display: flex; flex-direction: column; padding: 110px 25px; transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1); border-left: 1px solid rgba(0, 0, 0, 0.05); }
+.side-menu.active { right: 0; }
+.side-menu a { font-family: 'Orbitron'; font-size: 0.7rem; color: var(--text); text-decoration: none; margin: 15px 0; letter-spacing: 2px; opacity: 0.7; transition: 0.3s; }
+.side-menu a:hover, .side-menu a.active { color: #2563eb; opacity: 1; padding-left: 5px; }
+
+header { position: relative; z-index: 10; padding: 180px 20px 100px; text-align: center; }
+header h1 { font-family: 'Syncopate'; font-size: clamp(2.2rem, 8vw, 4.5rem); line-height: 1.1; margin: 0; }
+header h1 span { color: transparent; -webkit-text-stroke: 1.5px #2563eb; animation: colorShift 10s infinite alternate; }
+
+@keyframes colorShift {
+    0% { -webkit-text-stroke-color: #2563eb; }
+    50% { -webkit-text-stroke-color: #a855f7; }
+    100% { -webkit-text-stroke-color: #ec4899; }
+}
+
+header p { font-family: 'Orbitron'; max-width: 800px; margin: 25px auto; color: #666; font-size: 0.9rem; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; }
+
+section { position: relative; z-index: 10; max-width: 1000px; margin: auto; padding: 20px; }
+.card { background: var(--glass); padding: 50px; border-radius: 40px; border: 1px solid rgba(0, 0, 0, 0.05); margin-bottom: 50px; }
+.card h2 { font-family: 'Orbitron'; color: var(--text); font-size: 1.4rem; margin-bottom: 25px; letter-spacing: 3px; font-weight: 900; }
+.card p { font-family: 'Space Grotesk'; font-weight: 400; font-size: 1.15rem; line-height: 1.8; color: #444; }
+
+.brand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+.brand-grid div { background: rgba(255, 255, 255, 0.4); padding: 35px; border-radius: 25px; border: 1px solid rgba(0, 0, 0, 0.03); transition: 0.4s; }
+.brand-grid div h3 { font-family: 'Orbitron'; color: #2563eb; margin-bottom: 12px; font-size: 0.85rem; letter-spacing: 1px; font-weight: 900; }
+
+footer { text-align: center; padding: 80px 20px; font-family: 'Orbitron'; font-size: 0.6rem; color: #aaa; letter-spacing: 5px; }
+.text-link { color: #2563eb; text-decoration: none; font-weight: bold; border-bottom: 1px solid transparent; transition: 0.3s; }
+.text-link:hover { border-bottom: 1px solid #2563eb; }
+</style>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
+<div id="particles-js"></div>
 
 <nav>
   <div class="nav-container">
@@ -98,40 +110,40 @@ footer a{color:var(--neon); text-decoration:none; font-weight:bold;}
       <img src="logo.png" alt="Pointika Logo">
       <span class="logo-text">POINTIKA</span>
     </a>
-    <div class="menu-btn" id="menu-btn">☰</div>
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="press.html">Press</a>
-      <a href="contact.html">Contact</a>
-    </div>
+    <div class="menu-trigger" id="menuToggle"><i class="fas fa-bars"></i></div>
   </div>
 </nav>
 
-<header>
-  <h1>The Creative Pulse</h1>
+<div class="side-menu" id="sideMenu">
+    <a href="index.html">HOME</a>
+    <a href="about.html" class="active">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="press.html">PRESS</a>
+    <a href="contact.html">CONTACT</a>
+</div>
+
+<header data-aos="fade-down">
+  <h1>The Creative <span>Pulse</span></h1>
   <p>Where Digital Storytelling Meets Strategic Growth</p>
 </header>
 
 <section>
 
-<div class="card">
+<div class="card" data-aos="fade-up">
 <h2>Our Story</h2>
 <p>Pointika is a specialized creative media house focused on the art of digital storytelling. As the creative subsidiary of <strong><a href="https://point-media.link" target="_blank" class="text-link">Point Media</a></strong>, founded by <strong><a href="https://syedasifali.link" target="_blank" class="text-link">Syed Asif Ali</a></strong>, we bridge the gap between technical strategy and human connection.</p>
-<p style="margin-top:15px;">While Point Media handles the high-level communications and reputation management, Pointika is where the content comes to life. We transform brand values into visual narratives that capture attention and build lasting authority.</p>
 </div>
 
-<div class="card">
+<div class="card" data-aos="fade-up">
 <h2>Vision & Impact</h2>
 <ul style="list-style:none;">
-  <li style="margin-bottom:15px;"><strong style="color:var(--neon);">• Influencer Evolution:</strong> Moving beyond simple posts to building legacy-driven digital footprints.</li>
-  <li style="margin-bottom:15px;"><strong style="color:var(--neon);">• Content Innovation:</strong> Utilizing high-end production to tell stories that resonate across MENA and global markets.</li>
-  <li><strong style="color:var(--neon);">• Strategic Alignment:</strong> Every piece of content is backed by the data-driven strategies of the Point Media network.</li>
+  <li style="margin-bottom:20px;"><strong style="color:#2563eb; font-family:'Orbitron'; font-size:0.8rem; font-weight:900;">• Influencer Evolution:</strong> Moving beyond simple posts to building legacy-driven digital footprints.</li>
+  <li style="margin-bottom:20px;"><strong style="color:#2563eb; font-family:'Orbitron'; font-size:0.8rem; font-weight:900;">• Content Innovation:</strong> Utilizing high-end production to tell stories that resonate across MENA and global markets.</li>
+  <li><strong style="color:#2563eb; font-family:'Orbitron'; font-size:0.8rem; font-weight:900;">• Strategic Alignment:</strong> Every piece of content is backed by the data-driven strategies of the Point Media network.</li>
 </ul>
 </div>
 
-<div class="card" style="background: rgba(0,255,255,0.02); border-style:dashed;">
+<div class="card" data-aos="fade-up" style="background: rgba(37,99,235,0.02); border-style:dashed;">
 <h2>How We Work</h2>
 <div class="brand-grid">
   <div>
@@ -155,21 +167,34 @@ footer a{color:var(--neon); text-decoration:none; font-weight:bold;}
 © 2026 Pointika Media · Official Brand of <a href="https://point-media.link" target="_blank">Point Media</a> · Founded by <a href="https://syedasifali.link" target="_blank">Syed Asif Ali</a>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-const menuBtn = document.getElementById("menu-btn");
-const menu = document.getElementById("menu");
-
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  menu.classList.toggle("show");
-});
-
-document.addEventListener("click", (e) => {
-  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
-    menu.classList.remove("show");
-  }
-});
+    particlesJS('particles-js', {
+        "particles": { 
+            "number": { "value": 60 }, 
+            "color": { "value": ["#2563eb", "#a855f7", "#ec4899", "#00f2fe"] }, 
+            "opacity": { "value": 0.4 }, 
+            "size": { "value": 3 }, 
+            "line_linked": { "enable": true, "distance": 150, "color": "#ccc", "opacity": 0.2, "width": 1 }, 
+            "move": { "speed": 1.5 } 
+        }
+    });
+    AOS.init({ duration: 1000, once: false });
+    const menuToggle = document.getElementById('menuToggle');
+    const sideMenu = document.getElementById('sideMenu');
+    const icon = menuToggle.querySelector('i');
+    menuToggle.onclick = (e) => {
+        e.stopPropagation();
+        sideMenu.classList.toggle('active');
+        icon.className = sideMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+    };
+    document.onclick = () => { sideMenu.classList.remove('active'); icon.className = 'fas fa-bars'; };
+    window.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p')) {
+            e.preventDefault();
+        }
+    });
 </script>
-
 </body>
 </html>
