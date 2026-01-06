@@ -1,28 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://pointika.link/index.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://pointika.link/about.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://pointika.link/services.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://pointika.link/press.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://pointika.link/contact.html</loc>
-    <lastmod>2026-01-02</lastmod>
-    <priority>0.70</priority>
-  </url>
-</urlset>
+# Robots.txt for Pointika (Official Brand Website)
+# Brand Ecosystem: Pointika | Point Media | Syed Asif Ali
+
+User-agent: *
+# Disallow internal or temporary files
+Disallow: /CNAME
+Disallow: /tmp/
+Disallow: /private/
+
+# Allow all public content for indexing
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /press.html
+Allow: /contact.html
+Allow: /founder.html
+
+# Ensure Brand Assets are crawled for Google Knowledge Panel
+Allow: /logo.png
+Allow: /profile.jpg
+Allow: /favicon.ico
+
+# Correct Sitemap Location
+Sitemap: https://pointika.link/sitemap.xml
+
+# Specific crawl instructions for Google & Bing
+User-agent: Googlebot
+Disallow: 
+
+User-agent: Bingbot
+Crawl-delay: 1
