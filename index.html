@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <title>Pointika — Official Digital Media & Storytelling Brand</title>
-<meta name="description" content="Pointika is the official digital storytelling and media platform under Point Media. Specializing in influencer collaborations and strategic content campaigns.">
+<meta name="description" content="Pointika is the official digital storytelling and media platform under Point Media. Founded by Syed Asif Ali.">
+
+<meta property="og:title" content="Pointika — Official Digital Media & Storytelling Brand">
+<meta property="og:description" content="The creative arm of Point Media ecosystem, redefining digital legacies.">
+<meta property="og:image" content="https://pointika.link/logo.png">
+<meta property="og:url" content="https://pointika.link/">
+
 <link rel="canonical" href="https://pointika.link/">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Orbitron:wght@400;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 <script type="application/ld+json">
 {
@@ -35,6 +42,8 @@
         "url": "https://point-media.link"
       },
       "sameAs": [
+        "https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/",
+        "https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/",
         "https://www.crunchbase.com/organization/point-media-f31a",
         "https://twitter.com/syedasifali"
       ]
@@ -44,125 +53,134 @@
 </script>
 
 <style>
-:root { --neon: #00ffff; --brand: #60a5fa; --bg: #0b0d12; --card: #121826; }
-body{margin:0;font-family:'Poppins', sans-serif;background:var(--bg);color:#fff;line-height:1.7;overflow-x:hidden;}
+:root { --accent: #2563eb; --bg: #f8fafc; --text: #0f172a; --glass: rgba(255, 255, 255, 0.4); }
 
-/* NAVIGATION */
-nav{position:fixed;top:0;width:100%;background:#020617;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.5); border-bottom: 1px solid #1e293b;}
-.nav-container{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
-
-/* LOGO FIX */
-.logo{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:bold;color:var(--neon);letter-spacing:1px; text-decoration: none; transition: 0.3s;}
-.logo img{height:40px; width: auto; border-radius:5px; filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.6));}
-.logo:hover { opacity: 0.8; }
-
-.menu{display:flex;gap:25px}
-.menu a{color:#e5e7eb;text-decoration:none;font-weight:500;font-size:14px;transition:0.3s;}
-.menu a:hover, .menu a.active{color:var(--neon)}
-.menu-btn{display:none;font-size:22px;cursor:pointer;color:#fff;}
-
-@media(max-width:768px){
-.menu{position:fixed;top:60px;right:-100%;background:#020617;flex-direction:column;width:260px;padding:30px;height:100vh;transition:.3s; border-left: 1px solid #1e293b;}
-.menu.show{right:0}
-.menu-btn{display:block}
+/* ANTI-COPY PROTECTION */
+* { 
+    margin:0; padding:0; box-sizing:border-box; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent; 
 }
 
-/* HERO SECTION */
-header{background: radial-gradient(circle at center, #1e3a8a 0%, #0b0d12 100%); padding:180px 20px 100px;text-align:center}
-header h1{margin:0;font-size:52px;color:#fff;letter-spacing:-2px; font-weight: 700;}
-header h1 span{ color: var(--neon); }
-header p{max-width:800px;margin:20px auto 0;color:#cbd5f5;font-size:18px; font-weight: 300;}
+body { background: var(--bg); color: var(--text); font-family: 'Space Grotesk', sans-serif; overflow-x:hidden; }
+#particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
 
-/* CONTENT SECTIONS */
-section{max-width:1100px;margin:auto;padding:60px 20px}
-h2{color:var(--neon);margin-bottom:25px;font-size:32px; letter-spacing: -1px;}
-.card{background:var(--card);padding:45px;border-radius:24px;margin-bottom:40px;box-shadow:0 20px 50px rgba(0,0,0,0.5);border:1px solid #1e293b; position: relative;}
+nav { position:fixed; top:0; width:100%; height:75px; z-index:5000; background: rgba(255, 255, 255, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.05); display: flex; align-items: center; }
+.nav-container { max-width:1200px; margin:auto; width: 100%; padding:0 25px; display:flex; justify-content:space-between; align-items:center; }
+.logo { font-family:'Orbitron'; font-size:1.1rem; font-weight:900; color:var(--text); letter-spacing:4px; text-decoration:none; }
 
-.feature-list{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:25px;text-align:left;margin-top:30px;}
-.feature-item{background:rgba(255,255,255,0.02);padding:30px;border-radius:18px;border:1px solid #1e293b; transition: 0.3s;}
-.feature-item:hover { border-color: var(--neon); transform: translateY(-5px); }
-.feature-item strong { color: var(--brand); font-size: 20px; display: block; margin-bottom: 10px; }
+.menu-trigger { width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); font-size: 20px; z-index: 6001; }
 
-/* FOOTER */
-footer{text-align:center;padding:60px 20px;background:#020617;color:#94a3b8;font-size:13px;border-top:1px solid #1e293b;}
-a{color:var(--neon);text-decoration:none; font-weight: 600;}
+.side-menu { position: fixed; top: 0; right: -100%; width: 180px; height: 100vh; background: rgba(255, 255, 255, 0.98); z-index: 6000; display: flex; flex-direction: column; padding: 110px 25px; transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1); border-left: 1px solid rgba(0, 0, 0, 0.05); }
+.side-menu.active { right: 0; }
+.side-menu a { font-family: 'Orbitron'; font-size: 0.7rem; color: var(--text); text-decoration: none; margin: 15px 0; letter-spacing: 2px; opacity: 0.7; transition: 0.3s; }
+.side-menu a:hover { color: #2563eb; opacity: 1; padding-left: 5px; }
+
+header { position: relative; z-index: 10; padding: 180px 20px 100px; text-align: center; }
+header h1 { font-family: 'Syncopate'; font-size: clamp(2rem, 8vw, 5rem); line-height: 1; margin: 0; }
+header h1 span { color: transparent; -webkit-text-stroke: 1.5px #2563eb; animation: colorShift 10s infinite alternate; }
+
+@keyframes colorShift {
+    0% { -webkit-text-stroke-color: #2563eb; }
+    50% { -webkit-text-stroke-color: #a855f7; }
+    100% { -webkit-text-stroke-color: #00f2fe; }
+}
+
+section { position: relative; z-index: 10; max-width: 1000px; margin: auto; padding: 20px; }
+.card { background: var(--glass); padding: 50px; border-radius: 40px; border: 1px solid rgba(0, 0, 0, 0.05); margin-bottom: 50px; }
+.card h2 { font-family: 'Orbitron'; color: var(--text); font-size: 1.4rem; margin-bottom: 25px; letter-spacing: 3px; }
+
+.feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.feature-item { background: rgba(255, 255, 255, 0.4); padding: 35px; border-radius: 25px; border: 1px solid rgba(0, 0, 0, 0.03); transition: 0.4s; }
+.feature-item:hover { transform: translateY(-10px); background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.feature-item strong { color: #2563eb; font-family: 'Orbitron'; display: block; margin-bottom: 12px; font-size: 0.85rem; letter-spacing: 1px; }
+
+footer { text-align: center; padding: 80px 20px; font-family: 'Orbitron'; font-size: 0.6rem; color: #aaa; letter-spacing: 5px; }
 </style>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
+<div id="particles-js"></div>
 
 <nav>
   <div class="nav-container">
-    <a href="index.html" class="logo">
-      <img src="logo.png" alt="Pointika Logo">
-      <span>POINTIKA</span>
-    </a>
-    <div class="menu-btn" id="menu-btn" aria-label="Toggle Navigation">☰</div>
-    <div class="menu" id="menu">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="press.html">Press</a>
-      <a href="contact.html">Contact</a>
-    </div>
+    <a href="index.html" class="logo">POINT<span>IKA</span></a>
+    <div class="menu-trigger" id="menuToggle"><i class="fas fa-bars"></i></div>
   </div>
 </nav>
 
-<header>
+<div class="side-menu" id="sideMenu">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="press.html">PRESS</a>
+    <a href="contact.html">CONTACT</a>
+</div>
+
+<header data-aos="fade-down">
   <h1>POINT<span>IKA</span></h1>
-  <p>The Creative Pulse of <strong><a href="https://point-media.link" target="_blank" style="color:var(--brand);">Point Media</a></strong>. Redefining Digital Storytelling & Influencer Strategy.</p>
+  <p style="color: #666; margin-top: 20px; font-weight: 500;">The Creative Pulse of Point Media. Redefining Digital Storytelling.</p>
 </header>
 
 <section>
-  <div class="card">
-    <h2>Who We Are</h2>
-    <p>Pointika is the creative arm of the Point Media ecosystem. We don't just create content; we build digital legacies. Founded by <strong><a href="https://syedasifali.link" target="_blank">Syed Asif Ali</a></strong>, our mission is to transform the way influencers and brands communicate in a cluttered digital world.</p>
+  <div class="card" data-aos="fade-up">
+    <h2>WHO WE ARE</h2>
+    <p style="font-size: 1.15rem; line-height: 1.8; color: #444;">Pointika is the creative arm of the Point Media ecosystem. We build digital legacies through cinematic influence, founded by <strong>Syed Asif Ali</strong>.</p>
   </div>
 
-  <div class="card">
-    <h2>Our Core Expertise</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <strong>Influencer Growth</strong>
-        <p>We provide the strategic backbone for digital creators to scale their authority and reach across global markets.</p>
-      </div>
-      <div class="feature-item">
-        <strong>Content Narrative</strong>
-        <p>Moving beyond trends, we craft data-driven stories that build genuine human connection and brand loyalty.</p>
-      </div>
-      <div class="feature-item">
-        <strong>Digital Visibility</strong>
-        <p>Strategic amplification on TikTok, Instagram, and YouTube to ensure your message hits the right audience at the right time.</p>
-      </div>
+  <div class="feature-list">
+    <div class="feature-item" data-aos="zoom-in" data-aos-delay="100">
+      <strong>INFLUENCER GROWTH</strong>
+      <p style="color:#777;">Providing the strategic backbone for digital creators to scale authority.</p>
+    </div>
+    <div class="feature-item" data-aos="zoom-in" data-aos-delay="200">
+      <strong>CONTENT NARRATIVE</strong>
+      <p style="color:#777;">Crafting data-driven stories that build genuine human connection.</p>
+    </div>
+    <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
+      <strong>DIGITAL VISIBILITY</strong>
+      <p style="color:#777;">Strategic amplification for maximum impact.</p>
     </div>
   </div>
 </section>
 
-<footer>
-  © 2026 Pointika · A Creative Subsidiary of <a href="https://point-media.link" target="_blank" style="color:#fff;">Point Media</a> · Founded by <a href="https://syedasifali.link" target="_blank" style="color:var(--neon);">Syed Asif Ali</a>
-</footer>
+<footer>© 2026 POINTIKA • STRATEGIC LEGACY</footer>
 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-const menuBtn = document.getElementById("menu-btn");
-const menu = document.getElementById("menu");
+    particlesJS('particles-js', {
+        "particles": { 
+            "number": { "value": 60 }, 
+            "color": { "value": ["#2563eb", "#a855f7", "#ec4899", "#00f2fe"] }, 
+            "opacity": { "value": 0.4 }, 
+            "size": { "value": 3 }, 
+            "line_linked": { "enable": true, "distance": 150, "color": "#ccc", "opacity": 0.2, "width": 1 }, 
+            "move": { "speed": 1.5 } 
+        }
+    });
 
-function toggleMenu(){
-  menu.classList.toggle("show");
-  menuBtn.textContent = menu.classList.contains("show") ? "✖" : "☰";
-}
+    AOS.init({ duration: 1000, once: false });
 
-menuBtn.addEventListener("click", (e) => { 
-  e.stopPropagation(); 
-  toggleMenu(); 
-});
+    const menuToggle = document.getElementById('menuToggle');
+    const sideMenu = document.getElementById('sideMenu');
+    const icon = menuToggle.querySelector('i');
+    
+    menuToggle.onclick = (e) => {
+        e.stopPropagation();
+        sideMenu.classList.toggle('active');
+        icon.className = sideMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+    };
 
-document.addEventListener("click", function(e){
-  if(!menu.contains(e.target) && !menuBtn.contains(e.target)){
-    menu.classList.remove("show");
-    menuBtn.textContent = "☰";
-  }
-});
+    document.onclick = () => { sideMenu.classList.remove('active'); icon.className = 'fas fa-bars'; };
+
+    window.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p')) {
+            e.preventDefault();
+        }
+    });
 </script>
-
 </body>
 </html>
