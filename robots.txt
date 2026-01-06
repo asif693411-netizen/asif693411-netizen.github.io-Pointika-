@@ -1,32 +1,10 @@
-# Robots.txt for Pointika (Official Brand Website)
-# Brand Ecosystem: Pointika | Point Media | Syed Asif Ali
-
 User-agent: *
-# Disallow internal or temporary files
-Disallow: /CNAME
-Disallow: /tmp/
-Disallow: /private/
-
-# Allow all public content for indexing
 Allow: /
-Allow: /index.html
-Allow: /about.html
-Allow: /services.html
-Allow: /press.html
-Allow: /contact.html
-Allow: /founder.html
-
-# Ensure Brand Assets are crawled for Google Knowledge Panel
 Allow: /logo.png
 Allow: /profile.jpg
-Allow: /favicon.ico
 
-# Correct Sitemap Location
+# Block configs
+Disallow: /CNAME
+Disallow: /style.css
+
 Sitemap: https://pointika.link/sitemap.xml
-
-# Specific crawl instructions for Google & Bing
-User-agent: Googlebot
-Disallow: 
-
-User-agent: Bingbot
-Crawl-delay: 1
