@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>The Visionary | Syed Asif Ali - Founder of Pointika</title>
-<meta name="description" content="Syed Asif Ali, the visionary founder leading the strategic evolution at Pointika. A distinct digital media entrepreneur and strategist.">
-<link rel="canonical" href="https://pointika.link/visionary.html">
+<title>Founder of Pointika | Syed Asif Ali</title>
+<meta name="description" content="Syed Asif Ali is the founder of Pointika, a digital media and storytelling brand focused on credibility-driven narratives and strategic media positioning.">
+<link rel="canonical" href="https://pointika.link/founder.html">
 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Orbitron:wght@400;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
+<!-- ================= PERSON SCHEMA (FOUNDER) ================= -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -20,7 +20,12 @@
   "name": "Syed Asif Ali",
   "url": "https://syedasifali.link",
   "image": "https://syedasifali.link/profile.jpg",
-  "jobTitle": "Founder & Digital Media Entrepreneur",
+  "jobTitle": "Founder & Digital Media Strategist",
+  "description": "Syed Asif Ali is a digital media entrepreneur and strategist, known for building credibility-focused media brands and narrative-driven digital platforms.",
+  "affiliation": {
+    "@type": "Organization",
+    "@id": "https://pointika.link/#organization"
+  },
   "worksFor": {
     "@type": "Organization",
     "name": "Pointika",
@@ -28,178 +33,149 @@
   },
   "sameAs": [
     "https://syedasifali.link",
-    "https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/",
-    "https://techbullion.com/syed-asif-ali-from-techbullion-feature-to-global-digital-media-growth/",
     "https://www.crunchbase.com/person/syed-asif-ali",
-    "https://twitter.com/syedasifali"
+    "https://twitter.com/syedasifali",
+    "https://www.linkedin.com/in/syedasifali"
   ]
 }
 </script>
 
 <style>
-:root { --accent: #2563eb; --bg: #f8fafc; --text: #0f172a; --glass: rgba(255, 255, 255, 0.4); }
+:root { --accent:#2563eb; --bg:#f8fafc; --text:#0f172a; }
 
-/* ANTI-COPY & NO LONG PRESS PROTECTION */
-* { 
-    margin:0; padding:0; box-sizing:border-box; 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent; 
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-body { background: var(--bg); color: var(--text); font-family: 'Space Grotesk', sans-serif; overflow-x:hidden; }
-#particles-js { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-
-/* NAVIGATION */
-nav { position:fixed; top:0; width:100%; height:75px; z-index:5000; background: rgba(255, 255, 255, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.05); display: flex; align-items: center; }
-.nav-container { max-width:1200px; margin:auto; width: 100%; padding:0 25px; display:flex; justify-content:space-between; align-items:center; }
-.logo { font-family:'Orbitron'; font-size:1.1rem; font-weight:900; color:var(--text); letter-spacing:4px; text-decoration:none; display: flex; align-items: center; gap: 10px; }
-.logo img { height: 35px; border-radius: 4px; }
-
-.menu-trigger { width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); font-size: 20px; z-index: 6001; }
-
-/* SLIM SIDE MENU */
-.side-menu { 
-    position: fixed; top: 0; right: -100%; 
-    width: 180px; 
-    height: 100vh; 
-    background: rgba(255, 255, 255, 0.98); 
-    z-index: 6000; 
-    display: flex; flex-direction: column; padding: 110px 25px; 
-    transition: 0.5s cubic-bezier(0.8, 0, 0.2, 1);
-    border-left: 1px solid rgba(0, 0, 0, 0.05);
-}
-.side-menu.active { right: 0; }
-.side-menu a { font-family: 'Orbitron'; font-size: 0.7rem; color: var(--text); text-decoration: none; margin: 15px 0; letter-spacing: 2px; opacity: 0.7; transition: 0.3s; }
-.side-menu a:hover { color: #2563eb; opacity: 1; padding-left: 5px; }
-
-/* VISIONARY BOX */
-section { position: relative; z-index: 10; max-width: 800px; margin: auto; padding: 180px 20px 100px; }
-.vision-card { background: var(--glass); padding: 60px 40px; border-radius: 40px; border: 1px solid rgba(0, 0, 0, 0.05); backdrop-filter: none !important; text-align: center; }
-
-.profile-img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 25px; border: 3px solid #2563eb; padding: 5px; animation: glowPulse 5s infinite alternate; }
-
-@keyframes glowPulse {
-    0% { border-color: #2563eb; box-shadow: 0 0 10px rgba(37,99,235,0.2); }
-    50% { border-color: #a855f7; box-shadow: 0 0 20px rgba(168,85,247,0.3); }
-    100% { border-color: #00f2fe; box-shadow: 0 0 10px rgba(0,242,254,0.2); }
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: rgba(255,255,255,0.6);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
 }
 
-.badge { font-family: 'Orbitron'; background: rgba(37,99,235,0.1); color: #2563eb; padding: 8px 20px; border-radius: 50px; font-size: 0.75rem; font-weight: 900; letter-spacing: 2px; }
-
-h1 { font-family: 'Syncopate'; font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 25px; line-height: 1.1; }
-h1 span { color: transparent; -webkit-text-stroke: 1px #2563eb; animation: colorShift 10s infinite alternate; }
-
-@keyframes colorShift {
-    0% { -webkit-text-stroke-color: #2563eb; }
-    50% { -webkit-text-stroke-color: #a855f7; }
-    100% { -webkit-text-stroke-color: #ec4899; }
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.bio { font-size: 1.2rem; line-height: 1.8; color: #444; margin: 30px 0; }
-
-.identity-footer { font-size: 0.85rem; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 30px; color: #888; margin-top: 30px; line-height: 1.6; }
-.identity-footer a { color: #2563eb; text-decoration: none; font-weight: 700; }
-
-/* WHATSAPP BUTTON FIX */
-.wa-container { display: flex; justify-content: center; width: 100%; margin-top: 20px; }
-.wa-btn { 
-    background: #25d366 !important; 
-    color: #fff !important; 
-    border-radius: 50px !important; 
-    padding: 15px 30px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 12px !important;
-    font-family: 'Orbitron' !important;
-    font-size: 0.8rem !important;
-    font-weight: 900 !important;
-    text-decoration: none;
-    width: 100%;
-    max-width: 320px;
-    transition: 0.3s ease;
-    box-shadow: 0 10px 20px rgba(37,211,102,0.15);
+.logo {
+  font-family: 'Orbitron';
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: var(--text);
 }
-.wa-btn:hover { background: #128c7e !important; transform: translateY(-3px); box-shadow: 0 15px 25px rgba(37,211,102,0.25); }
 
-footer { text-align: center; padding: 80px 20px; font-family: 'Orbitron'; font-size: 0.6rem; color: #aaa; letter-spacing: 5px; }
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 160px 20px 100px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 60px 40px;
+  border: 1px solid rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  padding: 5px;
+  margin-bottom: 25px;
+}
+
+.badge {
+  display: inline-block;
+  font-family: 'Orbitron';
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background: rgba(37,99,235,0.1);
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Syncopate';
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.footer-note {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #777;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 70px 20px;
+  font-family: 'Orbitron';
+  font-size: 0.6rem;
+  letter-spacing: 5px;
+  color: #aaa;
+}
 </style>
 </head>
 
-<body oncontextmenu="return false;">
-<div id="particles-js"></div>
+<body>
 
 <nav>
   <div class="nav-container">
-    <a href="index.html" class="logo"><img src="logo.png" alt="Pointika Logo"> <span>POINTIKA</span></a>
-    <div class="menu-trigger" id="menuToggle"><i class="fas fa-bars"></i></div>
+    <a href="index.html" class="logo">POINTIKA</a>
   </div>
 </nav>
 
-<div class="side-menu" id="sideMenu">
-    <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="services.html">SERVICES</a>
-    <a href="press.html">PRESS</a>
-    <a href="contact.html">CONTACT</a>
-</div>
-
 <section>
-    <div class="vision-card" data-aos="zoom-in">
-        <img src="https://syedasifali.link/profile.jpg" alt="Syed Asif Ali" class="profile-img"><br>
-        <span class="badge">VISIONARY FOUNDER</span>
-        <h1>SYED ASIF <span>ALI</span></h1>
-        <p class="bio">Entrepreneur and Digital Creator leading the strategic evolution at <strong>Pointika</strong>. Redefining the intersection of digital media and human storytelling.</p>
+  <div class="card">
+    <img src="https://syedasifali.link/profile.jpg" alt="Syed Asif Ali" class="profile">
+    <div class="badge">FOUNDER</div>
+    <h1>SYED ASIF ALI</h1>
 
-        <div class="wa-container">
-            <a href="https://wa.me/971527157894" target="_blank" class="wa-btn">
-                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-            </a>
-        </div>
+    <p class="bio">
+      Syed Asif Ali is the founder of <strong>Pointika</strong>, a digital media and storytelling brand built on
+      credibility, strategic narrative design, and ethical media positioning. His work focuses on helping
+      brands and individuals establish trust-driven digital identities across global platforms.
+    </p>
 
-        <div class="identity-footer">
-            <strong>Professional Identity:</strong> Syed Asif Ali is a distinct media strategist. For official inquiries, visit <a href="https://syedasifali.link" target="_blank">syedasifali.link</a>.
-        </div>
+    <div class="footer-note">
+      Official founder profile of Pointika.  
+      Primary identity reference: <a href="https://syedasifali.link" target="_blank">syedasifali.link</a>
     </div>
+  </div>
 </section>
 
-<footer>© 2026 POINTIKA • STRATEGIC LEGACY • SYED ASIF ALI</footer>
+<footer>© 2026 POINTIKA • FOUNDER IDENTITY • SYED ASIF ALI</footer>
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    particlesJS('particles-js', {
-        "particles": { 
-            "number": { "value": 60 }, 
-            "color": { "value": ["#2563eb", "#a855f7", "#ec4899", "#00f2fe"] }, 
-            "opacity": { "value": 0.4 }, 
-            "size": { "value": 3 }, 
-            "line_linked": { "enable": true, "distance": 150, "color": "#ccc", "opacity": 0.2, "width": 1 }, 
-            "move": { "speed": 1.2 } 
-        }
-    });
-
-    AOS.init({ duration: 1000, once: false });
-
-    const menuToggle = document.getElementById('menuToggle');
-    const sideMenu = document.getElementById('sideMenu');
-    const icon = menuToggle.querySelector('i');
-    
-    menuToggle.onclick = (e) => {
-        e.stopPropagation();
-        sideMenu.classList.toggle('active');
-        icon.className = sideMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
-    };
-
-    document.onclick = () => { sideMenu.classList.remove('active'); icon.className = 'fas fa-bars'; };
-
-    window.addEventListener('keydown', function(e) {
-        if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p')) {
-            e.preventDefault();
-        }
-    });
-</script>
 </body>
 </html>
