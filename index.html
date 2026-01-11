@@ -6,11 +6,14 @@
 
 <title>Pointika — Official Digital Media & Storytelling Brand</title>
 <meta name="description" content="Pointika is the official digital storytelling and media platform under Point Media. Founded by Syed Asif Ali.">
+<meta name="robots" content="index, follow">
 
 <meta property="og:title" content="Pointika — Official Digital Media & Storytelling Brand">
 <meta property="og:description" content="The creative arm of Point Media ecosystem, redefining digital legacies.">
 <meta property="og:image" content="https://pointika.link/logo.png">
 <meta property="og:url" content="https://pointika.link/">
+
+<link rel="icon" type="image/png" href="https://pointika.link/logo.png">
 
 <link rel="canonical" href="https://pointika.link/">
 
@@ -28,7 +31,7 @@
       "name": "Pointika",
       "url": "https://pointika.link/",
       "logo": "https://pointika.link/logo.png",
-      "description": "Pointika is the official digital storytelling and media platform under Point Media.",
+      "description": "Pointika is the official digital storytelling and media platform under Point Media, founded by Syed Asif Ali.",
       "founder": {
         "@type": "Person",
         "@id": "https://syedasifali.link/#person",
@@ -42,11 +45,45 @@
         "url": "https://point-media.link"
       },
       "sameAs": [
-        "https://ipsnews.net/business/2026/01/01/syed-asif-ali-on-building-credible-digital-media-through-vision-strategy-and-ethical-storytelling/",
+        "https://www.facebook.com/share/1Bsk8JrL49/",
+        "https://www.crunchbase.com/organization/pointika",
+        "https://www.tiktok.com/@pointika",
+        "https://www.mexc.com/en-GB/news/387586",
+        "https://www.mexc.com/en-GB/news/387587",
+        "https://www.manilatimes.net/2026/01/09/tmt-newswire/plentisoft/syed-asif-ali-scales-digital-media-operations-in-the-united-arab-emirates-through-point-media-and-pointika/2255897",
         "https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/",
-        "https://www.crunchbase.com/organization/point-media-f31a",
-        "https://twitter.com/syedasifali"
+        "https://www.bignewsnetwork.com/news/278783898/syed-asif-ali-entrepreneur-digital-creator-and-strategic-storyteller",
+        "https://www.bbntimes.com/society/why-digital-trust-has-become-a-social-issue-a-conversation-with-syed-asif-ali",
+        "https://www.outlookindia.com/hub4business/how-syed-asif-ali-is-redefining-digital-authority-and-identity-engineering-in-the-uae",
+        "https://ipsnews.net/business/2026/01/06/syed-asif-ali-redefining-brand-storytelling-in-digital-transformation/",
+        "https://www.digitaljournal.com/pr/news/vehement-media/syed-asif-ali-digital-media-148099701.html",
+        "https://www.streetinsider.com/dr/news.php?id=25815791"
       ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://syedasifali.link/#person",
+      "name": "Syed Asif Ali",
+      "url": "https://syedasifali.link",
+      "jobTitle": "Founder & Digital Creator",
+      "birthDate": "1997-01-23",
+      "sameAs": [
+        "https://www.linkedin.com/in/syedasifali",
+        "https://www.crunchbase.com/person/syed-asif-ali",
+        "https://syedasifali.link"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://pointika.link/#website",
+      "url": "https://pointika.link/",
+      "name": "Pointika",
+      "publisher": { "@id": "https://pointika.link/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pointika.link/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
   ]
 }
@@ -167,7 +204,7 @@ footer { text-align: center; padding: 80px 20px; font-family: 'Orbitron'; font-s
     const menuToggle = document.getElementById('menuToggle');
     const sideMenu = document.getElementById('sideMenu');
     const icon = menuToggle.querySelector('i');
-    
+
     menuToggle.onclick = (e) => {
         e.stopPropagation();
         sideMenu.classList.toggle('active');
