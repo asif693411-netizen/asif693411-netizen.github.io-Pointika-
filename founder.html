@@ -11,46 +11,112 @@
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Orbitron:wght@400;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- ================= PERSON SCHEMA (FOUNDER) ================= -->
+<!-- ================= PERSON SCHEMA (REPLACED) ================= -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://syedasifali.link/#person",
-  "name": "Syed Asif Ali",
-  "url": "https://syedasifali.link",
-  "image": "https://syedasifali.link/profile.jpg",
-  "jobTitle": "Founder & Digital Media Strategist",
-  "description": "Syed Asif Ali is a digital media entrepreneur and strategist, known for building credibility-focused media brands and narrative-driven digital platforms.",
-  "affiliation": {
-    "@type": "Organization",
-    "@id": "https://pointika.link/#organization"
-  },
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Pointika",
-    "url": "https://pointika.link"
-  },
-  "sameAs": [
-    "https://syedasifali.link",
-    "https://www.crunchbase.com/person/syed-asif-ali",
-    "https://twitter.com/syedasifali",
-    "https://www.linkedin.com/in/syedasifali"
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://syedasifali.link/#person",
+      "name": "Syed Asif Ali",
+      "jobTitle": [
+        "Founder of Point Media",
+        "Founder of Pointika",
+        "Digital Architect"
+      ],
+      "url": "https://syedasifali.link/",
+      "image": "https://syedasifali.link/profile.jpg",
+      "birthDate": "1997-01-23",
+      "description": "Syed Asif Ali is a digital media entrepreneur and founder of Point Media and Pointika, operating in the UAE.",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q137724229",
+        "https://www.imdb.com/name/nm18099961/",
+        "https://www.crunchbase.com/person/syed-asif-ali",
+        "https://www.linkedin.com/in/syed-asif-ali-36b5623a0",
+        "https://www.instagram.com/syedasifaliofficial/",
+        "https://www.manilatimes.net/2026/01/09/tmt-newswire/plentisoft/syed-asif-ali-scales-digital-media-operations-in-the-united-arab-emirates-through-point-media-and-pointika/2255897",
+        "https://techbullion.com/syed-asif-ali-founder-of-fastest-growing-digital-media-company-point-media/",
+        "https://www.mexc.com/en-GB/news/387586",
+        "https://www.mexc.com/en-GB/news/387587"
+      ],
+      "hasCredential": [
+        {
+          "@type": "CreativeWork",
+          "name": "Scaling Digital Media in UAE",
+          "publisher": "The Manila Times",
+          "datePublished": "2026-01-09",
+          "url": "https://www.manilatimes.net/2026/01/09/tmt-newswire/plentisoft/syed-asif-ali-scales-digital-media-operations-in-the-united-arab-emirates-through-point-media-and-pointika/2255897"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "The Architect of Digital Trust",
+          "publisher": "TechBullion",
+          "url": "https://techbullion.com/the-architect-of-digital-trust-an-in-depth-conversation-with-syed-asif-ali-on-the-future-of-global-media/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Redefining Digital Authority",
+          "publisher": "Outlook India",
+          "url": "https://www.outlookindia.com/hub4business/how-syed-asif-ali-is-redefining-digital-authority-and-identity-engineering-in-the-uae"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Syed Asif Ali: Entrepreneur & Digital Creator",
+          "publisher": "Big News Network",
+          "url": "https://www.bignewsnetwork.com/news/278783898/syed-asif-ali-entrepreneur-digital-creator-and-strategic-storyteller"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Why Digital Trust is a Social Issue",
+          "publisher": "BBN Times",
+          "url": "https://www.bbntimes.com/society/why-digital-trust-has-become-a-social-issue-a-conversation-with-syed-asif-ali"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Redefining Brand Storytelling",
+          "publisher": "IPS News",
+          "datePublished": "2026-01-06",
+          "url": "https://ipsnews.net/business/2026/01/06/syed-asif-ali-redefining-brand-storytelling-in-digital-transformation/"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Digital Media Evolution",
+          "publisher": "Digital Journal",
+          "url": "https://www.digitaljournal.com/pr/news/vehement-media/syed-asif-ali-digital-media-148099701.html"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Strategic Storytelling in Media",
+          "publisher": "Street Insider",
+          "url": "https://www.streetinsider.com/dr/news.php?id=25815791"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Global Media Feature 1",
+          "publisher": "MEXC News",
+          "url": "https://www.mexc.com/en-GB/news/387586"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Global Media Feature 2",
+          "publisher": "MEXC News",
+          "url": "https://www.mexc.com/en-GB/news/387587"
+        }
+      ]
+    }
   ]
 }
 </script>
 
 <style>
 :root { --accent:#2563eb; --bg:#f8fafc; --text:#0f172a; }
-
 * { margin:0; padding:0; box-sizing:border-box; }
-
 body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Space Grotesk', sans-serif;
 }
-
 nav {
   position: fixed;
   top: 0;
@@ -62,7 +128,6 @@ nav {
   align-items: center;
   z-index: 1000;
 }
-
 .nav-container {
   max-width: 1200px;
   margin: auto;
@@ -72,7 +137,6 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   font-family: 'Orbitron';
   font-size: 1.1rem;
@@ -81,13 +145,11 @@ nav {
   text-decoration: none;
   color: var(--text);
 }
-
 section {
   max-width: 800px;
   margin: auto;
   padding: 160px 20px 100px;
 }
-
 .card {
   background: #ffffff;
   border-radius: 30px;
@@ -95,7 +157,6 @@ section {
   border: 1px solid rgba(0,0,0,0.05);
   text-align: center;
 }
-
 .profile {
   width: 150px;
   height: 150px;
@@ -104,7 +165,6 @@ section {
   padding: 5px;
   margin-bottom: 25px;
 }
-
 .badge {
   display: inline-block;
   font-family: 'Orbitron';
@@ -116,19 +176,16 @@ section {
   color: var(--accent);
   margin-bottom: 20px;
 }
-
 h1 {
   font-family: 'Syncopate';
   font-size: clamp(2rem, 6vw, 3.2rem);
   margin-bottom: 20px;
 }
-
 .bio {
   font-size: 1.15rem;
   line-height: 1.8;
   color: #444;
 }
-
 .footer-note {
   margin-top: 40px;
   font-size: 0.85rem;
@@ -136,7 +193,6 @@ h1 {
   border-top: 1px solid rgba(0,0,0,0.05);
   padding-top: 25px;
 }
-
 footer {
   text-align: center;
   padding: 70px 20px;
