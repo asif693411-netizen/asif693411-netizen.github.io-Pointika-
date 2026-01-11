@@ -103,43 +103,6 @@ section { position: relative; z-index: 10; max-width: 1000px; margin: auto; padd
 footer { text-align: center; padding: 80px 20px; font-family: 'Orbitron'; font-size: 0.6rem; color: #aaa; letter-spacing: 5px; }
 </style>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@graph": [
-    {
-      "@type":"ContactPage",
-      "mainEntity": {
-        "@type":"Organization",
-        "name":"Pointika",
-        "url": "https://pointika.link/contact.html",
-        "parentOrganization": {
-            "@type": "Organization",
-            "name": "Point Media",
-            "url": "https://point-media.link"
-        },
-        "founder": {
-            "@type": "Person",
-            "name": "Syed Asif Ali",
-            "url": "https://syedasifali.link"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971527157894",
-            "contactType": "Sales and Inquiries",
-            "email": "contact@pointika.link"
-        },
-        "sameAs": [
-            "https://www.facebook.com/share/1GBFzaSBFg/",
-            "https://www.instagram.com/pointika",
-            "https://www.tiktok.com/@pointika",
-            "https://www.crunchbase.com/organization/pointika"
-        ]
-      }
-    }
-  ]
-}
-</script>
 </head>
 
 <body oncontextmenu="return false;">
@@ -218,7 +181,7 @@ footer { text-align: center; padding: 80px 20px; font-family: 'Orbitron'; font-s
     const menuToggle = document.getElementById('menuToggle');
     const sideMenu = document.getElementById('sideMenu');
     const icon = menuToggle.querySelector('i');
-    
+
     menuToggle.onclick = (e) => {
         e.stopPropagation();
         sideMenu.classList.toggle('active');
