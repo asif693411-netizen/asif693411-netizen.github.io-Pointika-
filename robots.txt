@@ -3,7 +3,8 @@ Allow: /
 Allow: /logo.png
 Allow: /profile.jpg
 
-# Block configs
+Block configs
+
 Disallow: /CNAME
 Disallow: /style.css
 
